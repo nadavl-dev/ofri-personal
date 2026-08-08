@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "command -v git-lfs >/dev/null 2>&1 || dnf install -y git-lfs; git lfs install && git lfs pull && npm install"
+}
