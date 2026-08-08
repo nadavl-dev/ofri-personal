@@ -331,15 +331,14 @@ function mapJsonPage(page: (typeof pagesJson.pages)[number]): ProjectPageData {
       )
       .map((image, index) => {
         const baseName = `${index + 1}-${image.name.replace(/[^\w.-]+/g, "-").slice(0, 40)}`;
+        const isAnimated =
+          index === 0 &&
+          ["crumples", "dudu-tassa", "gus-van-sant"].includes(page.slug);
         const extension = image.url.includes(".svg")
           ? "svg"
-          : page.slug === "crumples" && index === 0
-            ? "gif"
-            : page.slug === "dudu-tassa" && index === 0
-              ? "gif"
-              : page.slug === "gus-van-sant" && index === 0
-                ? "gif"
-                : "png";
+          : isAnimated
+            ? "mp4"
+            : "png";
 
         return {
           src: `/images/projects/${page.slug}/${baseName}.${extension}`,
@@ -349,7 +348,7 @@ function mapJsonPage(page: (typeof pagesJson.pages)[number]): ProjectPageData {
           height: image.height,
           rotation: "rotation" in image ? image.rotation : undefined,
           objectFit: "cover" as const,
-          animated: extension === "gif",
+          animated: isAnimated,
         };
       }),
     videoPlaceholders: page.videoPlaceholders?.map((placeholder) => ({

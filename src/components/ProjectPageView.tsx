@@ -66,7 +66,16 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
                 : undefined,
             }}
           >
-            {image.animated || image.src.endsWith(".gif") ? (
+            {image.src.endsWith(".mp4") ? (
+              <video
+                src={image.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className={`size-full ${image.imageClass ?? "object-cover"}`}
+              />
+            ) : image.animated || image.src.endsWith(".gif") ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={image.src}
