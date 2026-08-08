@@ -5,11 +5,13 @@ export type Project = {
   frameId: string;
   thumbnail: {
     src: string;
+    hoverSrc: string;
     left: number;
     top: number;
     width: number;
     height: number;
     imageClass?: string;
+    hoverImageClass?: string;
   };
 };
 
@@ -21,6 +23,7 @@ export const PROJECTS: Project[] = [
     frameId: "58:709",
     thumbnail: {
       src: "/images/home/coral-atlas.png",
+      hoverSrc: "/images/hover/coral-atlas.png",
       left: 51,
       top: 81,
       width: 93,
@@ -36,6 +39,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1412",
     thumbnail: {
       src: "/images/home/who-am-i.png",
+      hoverSrc: "/images/hover/who-am-i.png",
       left: 172,
       top: 83,
       width: 93,
@@ -51,12 +55,13 @@ export const PROJECTS: Project[] = [
     frameId: "85:1334",
     thumbnail: {
       src: "/images/home/gus-van-sant.png",
+      hoverSrc: "/images/hover/gus-van-sant.png",
       left: 294,
       top: 221,
       width: 93,
       height: 123,
-      imageClass:
-        "absolute h-[260.16%] left-[-206.45%] max-w-none top-[-72.36%] w-[516.13%]",
+      imageClass: "object-cover",
+      hoverImageClass: "object-cover",
     },
   },
   {
@@ -66,6 +71,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1451",
     thumbnail: {
       src: "/images/home/triz.png",
+      hoverSrc: "/images/hover/triz.png",
       left: 664,
       top: 221,
       width: 93,
@@ -81,6 +87,7 @@ export const PROJECTS: Project[] = [
     frameId: "58:851",
     thumbnail: {
       src: "/images/home/bear-umbrella-loser.png",
+      hoverSrc: "/images/hover/bear-umbrella-loser.png",
       left: 1025,
       top: 83,
       width: 93,
@@ -96,6 +103,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1295",
     thumbnail: {
       src: "/images/home/trails.png",
+      hoverSrc: "/images/hover/trails.png",
       left: 1392,
       top: 221,
       width: 93,
@@ -111,6 +119,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1252",
     thumbnail: {
       src: "/images/home/hitchcock.png",
+      hoverSrc: "/images/hover/hitchcock.png",
       left: 51,
       top: 494,
       width: 93,
@@ -126,6 +135,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1190",
     thumbnail: {
       src: "/images/home/crumples.png",
+      hoverSrc: "/images/hover/crumples.png",
       left: 659,
       top: 638,
       width: 93,
@@ -141,6 +151,7 @@ export const PROJECTS: Project[] = [
     frameId: "58:793",
     thumbnail: {
       src: "/images/home/this-is-me.png",
+      hoverSrc: "/images/hover/this-is-me.png",
       left: 780,
       top: 638,
       width: 93,
@@ -156,6 +167,7 @@ export const PROJECTS: Project[] = [
     frameId: "58:1047",
     thumbnail: {
       src: "/images/home/oxide.png",
+      hoverSrc: "/images/hover/oxide.png",
       left: 1392,
       top: 638,
       width: 93,
@@ -171,6 +183,7 @@ export const PROJECTS: Project[] = [
     frameId: "85:1373",
     thumbnail: {
       src: "/images/home/four-directions.png",
+      hoverSrc: "/images/hover/four-directions.png",
       left: 285,
       top: 778,
       width: 93,
@@ -186,6 +199,7 @@ export const PROJECTS: Project[] = [
     frameId: "71:1133",
     thumbnail: {
       src: "/images/home/dudu-tassa.png",
+      hoverSrc: "/images/hover/dudu-tassa.png",
       left: 1025,
       top: 778,
       width: 93,

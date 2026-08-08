@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { ACCENT_BLUE, PANEL_WIDTH } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects";
 import { usePanels } from "./PanelProvider";
@@ -13,21 +15,48 @@ const ABOUT_TEXT = [
   "My work is driven by curiosity, attention to detail, and the belief that good design should communicate clearly while leaving a lasting impression. I’m always looking for opportunities to learn, collaborate, and continue growing as a designer.",
 ];
 
+function usePortalTarget() {
+  const [target, setTarget] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setTarget(document.body);
+  }, []);
+
+  return target;
+}
+
+function PanelOverlay({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      className={`fixed inset-0 z-40 bg-black/0 transition-opacity duration-300 ${
+        open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+      }`}
+      onClick={onClose}
+      aria-hidden={!open}
+    />
+  );
+}
+
 export function MenuPanel() {
   const { panel, closePanels } = usePanels();
+  const portalTarget = usePortalTarget();
   const open = panel === "menu";
 
-  return (
+  if (!portalTarget) {
+    return null;
+  }
+
+  return createPortal(
     <>
-      <div
-        className={`fixed inset-0 z-40 bg-black/0 transition-opacity duration-300 ${
-          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        }`}
-        onClick={closePanels}
-        aria-hidden={!open}
-      />
+      <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-full overflow-y-auto bg-[#1c07fb] text-white transition-transform duration-300 ease-out"
+        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto bg-[#1c07fb] text-white transition-transform duration-300 ease-out"
         style={{
           width: PANEL_WIDTH,
           left: 0,
@@ -60,25 +89,25 @@ export function MenuPanel() {
           ))}
         </nav>
       </aside>
-    </>
+    </>,
+    portalTarget,
   );
 }
 
 export function AboutPanel() {
   const { panel, closePanels } = usePanels();
+  const portalTarget = usePortalTarget();
   const open = panel === "about";
 
-  return (
+  if (!portalTarget) {
+    return null;
+  }
+
+  return createPortal(
     <>
-      <div
-        className={`fixed inset-0 z-40 bg-black/0 transition-opacity duration-300 ${
-          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        }`}
-        onClick={closePanels}
-        aria-hidden={!open}
-      />
+      <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-full overflow-y-auto text-white transition-transform duration-300 ease-out"
+        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto text-white transition-transform duration-300 ease-out"
         style={{
           width: PANEL_WIDTH,
           right: 0,
@@ -87,30 +116,50 @@ export function AboutPanel() {
         }}
         aria-hidden={!open}
       >
-        <div className="relative px-[30px] pb-[80px] pt-[38px]">
-          <div className="relative mb-[24px] h-[166px] w-[126px] overflow-hidden">
-            <Image
-              src="/images/about/portrait.png"
-              alt="Ofri Azriel"
-              fill
-              className="-scale-x-100 object-cover object-left"
-            />
+        <div className="relative flex min-h-full flex-col px-[30px] pb-[26px] pt-[38px]">
+          <div
+            className="relative mb-[24px] w-[126px] overflow-hidden"
+            style={{ aspectRatio: "126 / 166" }}
+          >
+            <div className="absolute inset-0 -scale-x-100 overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/about/portrait.png"
+                alt="Ofri Azriel"
+                className="absolute max-w-none"
+                style={{
+                  height: "100%",
+                  width: "197.62%",
+                  left: "-44.07%",
+                  top: 0,
+                }}
+              />
+            </div>
           </div>
+
           <div className="space-y-4 text-[14px] font-medium leading-normal">
             {ABOUT_TEXT.map((paragraph) => (
               <p key={paragraph.slice(0, 24)}>{paragraph}</p>
             ))}
           </div>
-          <div className="absolute bottom-[26px] left-[30px] flex flex-col gap-[2px] text-[14px] font-light underline">
-            <button type="button" className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline">
+
+          <div className="mt-auto flex flex-col gap-[2px] pt-10 text-[14px] font-light underline">
+            <button
+              type="button"
+              className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline"
+            >
               cv
             </button>
-            <button type="button" className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline">
+            <button
+              type="button"
+              className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline"
+            >
               Recommendations
             </button>
           </div>
         </div>
       </aside>
-    </>
+    </>,
+    portalTarget,
   );
 }
