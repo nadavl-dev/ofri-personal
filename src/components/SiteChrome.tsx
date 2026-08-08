@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { EMAIL, INSTAGRAM_LABEL, INSTAGRAM_URL } from "@/lib/constants";
+import { EMAIL, INSTAGRAM_URL } from "@/lib/constants";
 import { usePanels } from "./PanelProvider";
 
 export function SiteHeader({
@@ -77,10 +77,17 @@ export function SiteFooter({
         href={INSTAGRAM_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute text-[14px] font-light leading-normal text-black no-underline hover:opacity-80"
+        aria-label="Instagram"
+        className="absolute block hover:opacity-80"
         style={{ left: instagramLeft, top: instagramTop }}
       >
-        {INSTAGRAM_LABEL}
+        <Image
+          src="/images/shared/instagram.png"
+          alt=""
+          width={14}
+          height={14}
+          className="size-[14px]"
+        />
       </a>
     </>
   );
