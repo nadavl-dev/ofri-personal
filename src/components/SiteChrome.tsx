@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { EMAIL, INSTAGRAM_LABEL, INSTAGRAM_URL } from "@/lib/constants";
 import { usePanels } from "./PanelProvider";
 
 export function SiteHeader({
@@ -65,18 +66,22 @@ export function SiteFooter({
 }) {
   return (
     <>
-      <p
-        className="absolute text-[14px] font-light leading-normal text-black"
+      <a
+        href={`mailto:${EMAIL}`}
+        className="absolute text-[14px] font-light leading-normal text-black no-underline hover:opacity-80"
         style={{ left: emailLeft, top: emailTop }}
       >
-        ofri698@gmail.com
-      </p>
-      <p
-        className="absolute text-[14px] font-light leading-normal text-black"
+        {EMAIL}
+      </a>
+      <a
+        href={INSTAGRAM_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute text-[14px] font-light leading-normal text-black no-underline hover:opacity-80"
         style={{ left: instagramLeft, top: instagramTop }}
       >
-        instagram
-      </p>
+        {INSTAGRAM_LABEL}
+      </a>
     </>
   );
 }
