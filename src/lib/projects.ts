@@ -11,27 +11,23 @@ export type Project = {
     height: number;
     imageClass?: string;
   };
-  hover?: {
-    src: string;
-  };
 };
 
 export const PROJECTS: Project[] = [
   {
-    slug: "oxide",
-    name: "Oxide",
-    subtitle: "Exhibition Visual Identity",
-    frameId: "58:1047",
+    slug: "coral-atlas",
+    name: "Coral Atlas",
+    subtitle: "Editorial & Typographic Design",
+    frameId: "58:709",
     thumbnail: {
-      src: "/images/home/oxide.png",
-      left: 659,
-      top: 638,
+      src: "/images/home/coral-atlas.png",
+      left: 51,
+      top: 81,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-full left-[-1.92%] max-w-none top-0 w-[105.77%]",
+        "absolute h-[113.82%] left-[-0.1%] max-w-none top-0 w-[100.2%]",
     },
-    hover: { src: "/images/hover/oxide.png" },
   },
   {
     slug: "who-am-i",
@@ -47,7 +43,21 @@ export const PROJECTS: Project[] = [
       imageClass:
         "absolute h-[164.07%] left-[-36.19%] max-w-none top-[-31.39%] w-[173.6%]",
     },
-    hover: { src: "/images/hover/who-am-i.png" },
+  },
+  {
+    slug: "gus-van-sant",
+    name: "Gus Van Sant",
+    subtitle: "Retrospective Visual Identity",
+    frameId: "85:1334",
+    thumbnail: {
+      src: "/images/home/gus-van-sant.png",
+      left: 294,
+      top: 221,
+      width: 93,
+      height: 123,
+      imageClass:
+        "absolute h-[260.16%] left-[-206.45%] max-w-none top-[-72.36%] w-[516.13%]",
+    },
   },
   {
     slug: "triz",
@@ -63,23 +73,36 @@ export const PROJECTS: Project[] = [
       imageClass:
         "absolute h-[293.13%] left-[-240.2%] max-w-none top-[-97.96%] w-[583.55%]",
     },
-    hover: { src: "/images/hover/triz.png" },
   },
   {
-    slug: "coral-atlas",
-    name: "Coral Atlas",
-    subtitle: "Editorial & Typographic Design",
-    frameId: "58:709",
+    slug: "bear-umbrella-loser",
+    name: "Bear, Umbrella & Loser",
+    subtitle: "Experimental Stamp Printing",
+    frameId: "58:851",
     thumbnail: {
-      src: "/images/home/coral-atlas.png",
-      left: 51,
-      top: 81,
+      src: "/images/home/bear-umbrella-loser.png",
+      left: 1025,
+      top: 83,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-[113.82%] left-[-0.1%] max-w-none top-0 w-[100.2%]",
+        "absolute h-[539.16%] left-[-520.85%] max-w-none top-[-202.39%] w-[1004.61%]",
     },
-    hover: { src: "/images/hover/coral-atlas.png" },
+  },
+  {
+    slug: "trails",
+    name: "Trails",
+    subtitle: "Travel App & Website Design",
+    frameId: "85:1295",
+    thumbnail: {
+      src: "/images/home/trails.png",
+      left: 1392,
+      top: 221,
+      width: 93,
+      height: 123,
+      imageClass:
+        "absolute h-[500%] left-[-532.79%] max-w-none top-[-158.9%] w-[810.88%]",
+    },
   },
   {
     slug: "hitchcock",
@@ -88,14 +111,13 @@ export const PROJECTS: Project[] = [
     frameId: "85:1252",
     thumbnail: {
       src: "/images/home/hitchcock.png",
-      left: 294,
-      top: 221,
+      left: 51,
+      top: 494,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-[260.16%] left-[-206.45%] max-w-none top-[-72.36%] w-[516.13%]",
+        "absolute h-[108.13%] left-[-0.08%] max-w-none top-[-5.36%] w-[100.17%]",
     },
-    hover: { src: "/images/hover/hitchcock.png" },
   },
   {
     slug: "crumples",
@@ -104,30 +126,13 @@ export const PROJECTS: Project[] = [
     frameId: "85:1190",
     thumbnail: {
       src: "/images/home/crumples.png",
-      left: 285,
-      top: 778,
+      left: 659,
+      top: 638,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-[147.94%] left-[-12.32%] max-w-none top-[-36.43%] w-[146.75%]",
+        "absolute h-full left-[-1.92%] max-w-none top-0 w-[105.77%]",
     },
-    hover: { src: "/images/hover/crumples.png" },
-  },
-  {
-    slug: "four-directions",
-    name: "Four Directions",
-    subtitle: "Soap Brand Identity & Packaging",
-    frameId: "85:1373",
-    thumbnail: {
-      src: "/images/home/four-directions.png",
-      left: 51,
-      top: 494,
-      width: 93,
-      height: 123,
-      imageClass:
-        "absolute h-[108.13%] left-[-0.08%] max-w-none top-[-5.36%] w-[100.17%]",
-    },
-    hover: { src: "/images/hover/four-directions.png" },
   },
   {
     slug: "this-is-me",
@@ -143,39 +148,36 @@ export const PROJECTS: Project[] = [
       imageClass:
         "absolute h-[220.33%] left-[-207.01%] max-w-none top-[-46.14%] w-[521.55%]",
     },
-    hover: { src: "/images/hover/this-is-me.png" },
   },
   {
-    slug: "trails",
-    name: "Trails",
-    subtitle: "Travel App & Website Design",
-    frameId: "85:1295",
+    slug: "oxide",
+    name: "Oxide",
+    subtitle: "Exhibition Visual Identity",
+    frameId: "58:1047",
     thumbnail: {
-      src: "/images/home/trails.png",
-      left: 1025,
+      src: "/images/home/oxide.png",
+      left: 1392,
+      top: 638,
+      width: 93,
+      height: 123,
+      imageClass:
+        "absolute h-[123.58%] left-[-36.56%] max-w-none top-[-9.76%] w-[163.44%]",
+    },
+  },
+  {
+    slug: "four-directions",
+    name: "Four Directions",
+    subtitle: "Soap Brand Identity & Packaging",
+    frameId: "85:1373",
+    thumbnail: {
+      src: "/images/home/four-directions.png",
+      left: 285,
       top: 778,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-[346.59%] left-[-246.92%] max-w-none top-[-83.16%] w-[613.49%]",
+        "absolute h-[147.94%] left-[-12.32%] max-w-none top-[-36.43%] w-[146.75%]",
     },
-    hover: { src: "/images/hover/trails.png" },
-  },
-  {
-    slug: "bear-umbrella-loser",
-    name: "Bear, Umbrella & Loser",
-    subtitle: "Experimental Stamp Printing",
-    frameId: "58:851",
-    thumbnail: {
-      src: "/images/home/bear-umbrella-loser.png",
-      left: 1392,
-      top: 221,
-      width: 93,
-      height: 123,
-      imageClass:
-        "absolute h-[500%] left-[-532.79%] max-w-none top-[-158.9%] w-[810.88%]",
-    },
-    hover: { src: "/images/hover/bear-umbrella-loser.png" },
   },
   {
     slug: "dudu-tassa",
@@ -184,30 +186,13 @@ export const PROJECTS: Project[] = [
     frameId: "71:1133",
     thumbnail: {
       src: "/images/home/dudu-tassa.png",
-      left: 1392,
-      top: 638,
-      width: 93,
-      height: 123,
-      imageClass:
-        "absolute h-[123.58%] left-[-36.56%] max-w-none top-[-9.76%] w-[163.44%]",
-    },
-    hover: { src: "/images/hover/dudu-tassa.png" },
-  },
-  {
-    slug: "gus-van-sant",
-    name: "Gus Van Sant",
-    subtitle: "Retrospective Visual Identity",
-    frameId: "85:1334",
-    thumbnail: {
-      src: "/images/home/gus-van-sant.png",
       left: 1025,
-      top: 83,
+      top: 778,
       width: 93,
       height: 123,
       imageClass:
-        "absolute h-[539.16%] left-[-520.85%] max-w-none top-[-202.39%] w-[1004.61%]",
+        "absolute h-[346.59%] left-[-246.92%] max-w-none top-[-83.16%] w-[613.49%]",
     },
-    hover: { src: "/images/hover/gus-van-sant.png" },
   },
 ];
 
