@@ -57,19 +57,22 @@ export function SiteFooter({
   emailLeft = 59,
   emailTop = 934,
   instagramLeft = 205,
-  instagramTop = 934,
 }: {
   emailLeft?: number;
   emailTop?: number;
   instagramLeft?: number;
   instagramTop?: number;
 }) {
+  const instagramGap = instagramLeft - emailLeft;
+
   return (
-    <>
+    <div
+      className="absolute flex items-center"
+      style={{ left: emailLeft, top: emailTop }}
+    >
       <a
         href={`mailto:${EMAIL}`}
-        className="absolute text-[14px] font-light leading-normal text-black no-underline hover:opacity-80"
-        style={{ left: emailLeft, top: emailTop }}
+        className="text-[14px] font-light leading-[18px] text-black no-underline hover:opacity-80"
       >
         {EMAIL}
       </a>
@@ -78,17 +81,17 @@ export function SiteFooter({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
-        className="absolute block hover:opacity-80"
-        style={{ left: instagramLeft, top: instagramTop }}
+        className="flex items-center hover:opacity-80"
+        style={{ marginLeft: instagramGap }}
       >
         <Image
           src="/images/shared/instagram.png"
           alt=""
-          width={14}
-          height={14}
-          className="size-[14px]"
+          width={20}
+          height={20}
+          className="size-5"
         />
       </a>
-    </>
+    </div>
   );
 }
