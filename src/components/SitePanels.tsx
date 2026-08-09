@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -56,7 +55,7 @@ export function MenuPanel() {
     <>
       <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto bg-[#1c07fb] text-white transition-transform duration-300 ease-out"
+        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto bg-[#1c07fb] text-white transition-transform duration-300 ease-out [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         style={{
           width: PANEL_WIDTH,
           left: 0,
@@ -77,13 +76,7 @@ export function MenuPanel() {
                 <span className="font-light">{project.subtitle}</span>
               </Link>
               {index < PROJECTS.length - 1 ? (
-                <Image
-                  src="/images/shared/menu-divider.svg"
-                  alt=""
-                  width={369}
-                  height={1}
-                  className="block w-full max-w-[309px]"
-                />
+                <div className="-mx-[30px] h-px bg-white" />
               ) : null}
             </div>
           ))}
@@ -107,7 +100,7 @@ export function AboutPanel() {
     <>
       <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto text-white transition-transform duration-300 ease-out"
+        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto text-white transition-transform duration-300 ease-out [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         style={{
           width: PANEL_WIDTH,
           right: 0,
