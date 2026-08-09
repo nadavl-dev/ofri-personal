@@ -248,7 +248,7 @@ const coralAtlasPage: ProjectPageData = {
     top: 322,
     width: 426,
     height: 297,
-    text: "A coral field guide designed around movement and constant change. Rather than relying on dramatic transformations, the book evolves through small shifts in composition. While the structure remains consistent, the elements move from spread to spread, allowing each page to become part of the next.\n\nThe result is a continuous visual rhythm that encourages the reader to slow down, notice subtle changes, and experience the book as an ongoing sequence rather than a series of separate pages.",
+    text: "A coral field guide designed around movement and constant change. Rather than relying on dramatic transformations, the book evolves through small shifts in composition. While the structure remains consistent, the elements move from spread to spread, allowing each page to become part of the next. The result is a continuous visual rhythm that encourages the reader to slow down, notice subtle changes, and experience the book as an ongoing sequence rather than a series of separate pages.",
   },
   images: [
     {
