@@ -70,7 +70,7 @@ export function MenuPanel() {
               <Link
                 href={`/projects/${project.slug}`}
                 onClick={closePanels}
-                className="block py-[18px] text-[20px] leading-normal text-white no-underline hover:opacity-80"
+                className="-mx-[30px] block px-[30px] py-[18px] text-[20px] leading-normal text-white no-underline transition-colors hover:bg-white hover:text-[#1c07fb]"
               >
                 <span className="font-semibold">{project.name}</span>
                 <span>{` \\ `}</span>
