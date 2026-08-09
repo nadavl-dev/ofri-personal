@@ -97,14 +97,25 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
         {page.videoPlaceholders?.map((placeholder, index) => (
           <div
             key={`video-${index}`}
-            className="absolute bg-neutral-100"
+            className={`absolute overflow-hidden ${placeholder.src ? "" : "bg-neutral-100"}`}
             style={{
               left: placeholder.left,
               top: placeholder.top,
               width: placeholder.width,
               height: placeholder.height,
             }}
-          />
+          >
+            {placeholder.src ? (
+              <video
+                src={placeholder.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="size-full object-cover"
+              />
+            ) : null}
+          </div>
         ))}
 
         <MenuPanel />
