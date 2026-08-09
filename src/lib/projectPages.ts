@@ -299,9 +299,14 @@ const coralAtlasPage: ProjectPageData = {
       height: 219,
       objectFit: "cover",
     },
-  ],
-  videoPlaceholders: [
-    { left: 91, top: 1495, width: 504, height: 504 },
+    {
+      src: "/images/projects/coral-atlas/hero.mp4",
+      left: 91,
+      top: 1495,
+      width: 504,
+      height: 504,
+      objectFit: "cover",
+    },
   ],
   footer: {
     email: { left: 69, top: 2138, text: "ofri698@gmail.com" },
