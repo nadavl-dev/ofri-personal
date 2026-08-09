@@ -186,17 +186,16 @@
       "images": [
         { "nodeId": "92:1894", "name": "צילום מסך 2026-08-07 ב-23.22.54 1", "url": "https://www.figma.com/api/mcp/asset/574781e7-e732-4a39-88fb-89b97e223d89.png", "left": 151, "top": 220, "width": 521, "height": 729 },
         { "nodeId": "92:1897", "name": "ai0.course_httpss.mj.run0LE1EtyBxfI_preserve_the_exact_same_g_706d2517-af47-497a-bda6-d4f899481980_3 1", "url": "https://www.figma.com/api/mcp/asset/7dfe46b2-85e4-4844-9048-057de1b54de6.png", "left": 151, "top": 1562, "width": 689, "height": 689 },
-        { "nodeId": "92:1895", "name": "ai0.course_vast_monochromatic_white_manufacturing_facility_mu_2b5bca90-6ecb-4078-9a5f-1a0aac10bb3d_0 1", "url": "https://www.figma.com/api/mcp/asset/9d13e454-32d8-4f27-b229-31f2a017e123.png", "left": 948, "top": 1562, "width": 414, "height": 517 },
-        { "nodeId": "92:1896", "name": "ai0.course_the_same_glossy_white_anonymous_mannequin_head_smo_164596ce-39fc-41e9-8dee-3f1b9a8e583c_0 1", "url": "https://www.figma.com/api/mcp/asset/b4c70294-3e6b-430f-904a-06b0c186c23c.png", "left": 948, "top": 2164, "width": 414, "height": 517 }
+        { "nodeId": "92:1895", "name": "ai0.course_vast_monochromatic_white_manufacturing_facility_mu_2b5bca90-6ecb-4078-9a5f-1a0aac10bb3d_0 1", "url": "https://www.figma.com/api/mcp/asset/9d13e454-32d8-4f27-b229-31f2a017e123.png", "left": 948, "top": 1562, "width": 414, "height": 517 }
       ],
       "footer": {
         "email": { "nodeId": "85:1417", "text": "ofri698@gmail.com", "left": 69, "top": 2878, "width": 235, "height": 18 },
         "instagram": { "nodeId": "85:1418", "text": "instagram", "left": 215, "top": 2878, "width": 235, "height": 18 }
       },
       "videoPlaceholders": [
-        { "nodeId": "92:1893", "name": "ai0.course_httpss.mj.runLvkfMUEf6_Q_--ar_205256_--video_1_--e_56963191-1576-46db-b64b-1a166273b335_3 1", "left": 151, "top": 1034, "width": 352, "height": 443, "note": "Empty placeholder in Figma export — likely video/GIF" },
-        { "nodeId": "92:1892", "name": "ai0.course_automated_assembly_line_identical_glossy_white_han_0136847f-e5f3-46c2-be0d-e6d6d46e38c0_0 1", "left": 581, "top": 1034, "width": 352, "height": 443, "note": "Empty placeholder in Figma export — likely video/GIF" },
-        { "nodeId": "92:1891", "name": "ai0.course_genderless_human_form_anonymous_biometric_mannequi_8f8a1bcf-86fb-4fe0-b483-7883bcbaff1e_3 1", "left": 1010, "top": 1034, "width": 352, "height": 443, "note": "Empty placeholder in Figma export — likely video/GIF" }
+        { "nodeId": "92:1893", "name": "ai0.course_httpss.mj.runLvkfMUEf6_Q_--ar_205256_--video_1_--e_56963191-1576-46db-b64b-1a166273b335_3 1", "left": 151, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-1.mp4" },
+        { "nodeId": "92:1892", "name": "ai0.course_automated_assembly_line_identical_glossy_white_han_0136847f-e5f3-46c2-be0d-e6d6d46e38c0_0 1", "left": 581, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-2.mp4" },
+        { "nodeId": "92:1891", "name": "ai0.course_genderless_human_form_anonymous_biometric_mannequi_8f8a1bcf-86fb-4fe0-b483-7883bcbaff1e_3 1", "left": 1010, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-3.mp4" }
       ]
     },
     {

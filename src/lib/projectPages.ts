@@ -356,6 +356,7 @@ function mapJsonPage(page: (typeof pagesJson.pages)[number]): ProjectPageData {
       top: placeholder.top,
       width: placeholder.width,
       height: placeholder.height,
+      src: "src" in placeholder ? (placeholder as { src?: string }).src : undefined,
     })),
     footer: {
       email: {
