@@ -1,7 +1,7 @@
 "use client";
 
 import { SITE_WIDTH } from "@/lib/constants";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export function SiteScale({
   children,
@@ -12,32 +12,44 @@ export function SiteScale({
   contentHeight: number;
   fitToViewport?: boolean;
 }) {
+  const outerRef = useRef<HTMLDivElement | null>(null);
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
+    const element = outerRef.current;
+    if (!element) return;
+
     const updateScale = () => {
-      const viewportWidth = window.innerWidth;
+      const containerWidth = element.clientWidth || window.innerWidth;
       if (fitToViewport) {
         const viewportHeight = window.innerHeight;
         setScale(
           Math.min(
-            viewportWidth / SITE_WIDTH,
+            containerWidth / SITE_WIDTH,
             viewportHeight / contentHeight,
           ),
         );
       } else {
-        setScale(Math.min(1, viewportWidth / SITE_WIDTH));
+        setScale(Math.min(1, containerWidth / SITE_WIDTH));
       }
     };
 
     updateScale();
+    const observer = new ResizeObserver(updateScale);
+    observer.observe(element);
     window.addEventListener("resize", updateScale);
-    return () => window.removeEventListener("resize", updateScale);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", updateScale);
+    };
   }, [fitToViewport, contentHeight]);
 
   if (fitToViewport) {
     return (
-      <div className="flex h-[100dvh] w-full items-center justify-center overflow-hidden bg-white">
+      <div
+        ref={outerRef}
+        className="flex h-[100dvh] w-full items-center justify-center overflow-hidden bg-white"
+      >
         <div
           style={{
             width: SITE_WIDTH * scale,
@@ -60,7 +72,10 @@ export function SiteScale({
   }
 
   return (
-    <div className="flex w-full justify-center overflow-x-hidden bg-white">
+    <div
+      ref={outerRef}
+      className="flex w-full justify-center overflow-x-hidden bg-white"
+    >
       <div
         style={{
           width: SITE_WIDTH * scale,

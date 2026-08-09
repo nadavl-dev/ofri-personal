@@ -18,7 +18,7 @@ export function SiteHeader({
         type="button"
         aria-label="Open menu"
         onClick={toggleMenu}
-        className="absolute left-[51px] top-[39px] h-[10px] w-[26.357px] cursor-pointer border-0 bg-transparent p-0"
+        className="absolute left-[30px] top-[39px] h-[10px] w-[26.357px] cursor-pointer border-0 bg-transparent p-0"
       >
         <Image
           src="/images/shared/hamburger.svg"
@@ -45,7 +45,7 @@ export function SiteHeader({
       <button
         type="button"
         onClick={toggleAbout}
-        className="absolute left-[1449px] top-[44px] h-[17px] w-[36px] cursor-pointer border-0 bg-transparent p-0 text-left text-[14px] font-medium leading-normal text-black"
+        className="absolute right-[30px] top-[44px] h-[17px] w-[36px] cursor-pointer border-0 bg-transparent p-0 text-right text-[14px] font-medium leading-normal text-black"
       >
         about
       </button>

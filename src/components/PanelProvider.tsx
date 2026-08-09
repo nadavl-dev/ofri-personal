@@ -65,17 +65,16 @@ export function usePanels() {
 
 export function PanelPushContainer({ children }: { children: ReactNode }) {
   const { panel } = usePanels();
-  const offset =
-    panel === "menu" ? PANEL_WIDTH : panel === "about" ? -PANEL_WIDTH : 0;
 
   return (
-    <div className="overflow-x-clip">
-      <div
-        className="transition-transform duration-300 ease-out"
-        style={{ transform: `translateX(${offset}px)` }}
-      >
-        {children}
-      </div>
+    <div
+      className="min-h-[100dvh] transition-[padding] duration-300 ease-out"
+      style={{
+        paddingLeft: panel === "menu" ? PANEL_WIDTH : 0,
+        paddingRight: panel === "about" ? PANEL_WIDTH : 0,
+      }}
+    >
+      {children}
     </div>
   );
 }
