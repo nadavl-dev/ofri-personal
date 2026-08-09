@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { PANEL_WIDTH } from "@/lib/constants";
 
 type Panel = "menu" | "about" | null;
 
@@ -60,4 +61,21 @@ export function usePanels() {
     throw new Error("usePanels must be used within PanelProvider");
   }
   return context;
+}
+
+export function PanelPushContainer({ children }: { children: ReactNode }) {
+  const { panel } = usePanels();
+  const offset =
+    panel === "menu" ? PANEL_WIDTH : panel === "about" ? -PANEL_WIDTH : 0;
+
+  return (
+    <div className="overflow-x-clip">
+      <div
+        className="transition-transform duration-300 ease-out"
+        style={{ transform: `translateX(${offset}px)` }}
+      >
+        {children}
+      </div>
+    </div>
+  );
 }
