@@ -22,40 +22,10 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
           instagramTop={page.footer.instagram.top}
         />
 
-        <div
-          className="absolute bg-[#1c07fb]"
-          style={{
-            left: page.badge.left,
-            top: page.badge.top,
-            width: page.badge.width,
-            height: page.badge.height,
-          }}
-        />
-        <p
-          className="absolute text-[20px] font-medium leading-normal text-white"
-          style={{
-            left: page.badge.textLeft,
-            top: page.badge.textTop,
-          }}
-        >
-          {page.badge.text}
-        </p>
-
-        <div
-          className="absolute whitespace-pre-line text-[20px] font-light leading-normal text-black"
-          style={{
-            left: page.description.left,
-            top: page.description.top,
-            width: page.description.width,
-          }}
-        >
-          {page.description.text}
-        </div>
-
         {page.images.map((image) => (
           <div
             key={image.src}
-            className="absolute overflow-hidden"
+            className="absolute z-0 overflow-hidden"
             style={{
               left: image.left,
               top: image.top,
@@ -97,7 +67,7 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
         {page.videoPlaceholders?.map((placeholder, index) => (
           <div
             key={`video-${index}`}
-            className={`absolute overflow-hidden ${placeholder.src ? "" : "bg-neutral-100"}`}
+            className={`absolute z-0 overflow-hidden ${placeholder.src ? "" : "bg-neutral-100"}`}
             style={{
               left: placeholder.left,
               top: placeholder.top,
@@ -117,6 +87,36 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
             ) : null}
           </div>
         ))}
+
+        <div
+          className="absolute z-10 bg-[#1c07fb]"
+          style={{
+            left: page.badge.left,
+            top: page.badge.top,
+            width: page.badge.width,
+            height: page.badge.height,
+          }}
+        />
+        <p
+          className="absolute z-10 text-[20px] font-medium leading-normal text-white"
+          style={{
+            left: page.badge.textLeft,
+            top: page.badge.textTop,
+          }}
+        >
+          {page.badge.text}
+        </p>
+
+        <div
+          className="absolute z-10 bg-white whitespace-pre-line text-[20px] font-light leading-normal text-black"
+          style={{
+            left: page.description.left,
+            top: page.description.top,
+            width: page.description.width,
+          }}
+        >
+          {page.description.text}
+        </div>
 
         <MenuPanel />
         <AboutPanel />
