@@ -447,7 +447,15 @@ export const PROJECT_PAGES: ProjectPageData[] = [
           "absolute h-[100.1%] left-[-31.25%] max-w-none top-[-0.05%] w-[162.5%]",
       },
     ],
-    videoPlaceholders: [{ left: 132, top: 557, width: 1280, height: 720 }],
+    videoPlaceholders: [
+      {
+        left: 132,
+        top: 557,
+        width: 1280,
+        height: 720,
+        src: "/images/projects/this-is-me/zot-ani.mp4",
+      },
+    ],
   },
 ];
 
