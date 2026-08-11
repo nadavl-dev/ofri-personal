@@ -68,7 +68,7 @@ const oxidePage: ProjectPageData = {
   },
   images: [
     {
-      src: "/images/projects/oxide/video.png",
+      src: "/images/projects/oxide/hero.mp4",
       left: 147,
       top: 220,
       width: 597,
@@ -76,7 +76,7 @@ const oxidePage: ProjectPageData = {
       objectFit: "cover",
     },
     {
-      src: "/images/projects/oxide/cube.png",
+      src: "/images/projects/oxide/cube.mp4",
       left: 147,
       top: 794,
       width: 373,
@@ -84,7 +84,7 @@ const oxidePage: ProjectPageData = {
       objectFit: "cover",
     },
     {
-      src: "/images/projects/oxide/cone.png",
+      src: "/images/projects/oxide/cone.mp4",
       left: 568,
       top: 794,
       width: 373,
@@ -92,7 +92,7 @@ const oxidePage: ProjectPageData = {
       objectFit: "cover",
     },
     {
-      src: "/images/projects/oxide/sphere.png",
+      src: "/images/projects/oxide/sphere.mp4",
       left: 989,
       top: 794,
       width: 374,
