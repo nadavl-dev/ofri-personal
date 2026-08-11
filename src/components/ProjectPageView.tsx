@@ -89,7 +89,7 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
         ))}
 
         <div
-          className="absolute z-10 flex items-center justify-center bg-[#1c07fb]"
+          className="absolute z-20 flex items-center justify-center bg-[#1c07fb]"
           style={{
             left: page.badge.left,
             top: page.badge.top,
