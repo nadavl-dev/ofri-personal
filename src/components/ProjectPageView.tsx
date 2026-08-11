@@ -98,7 +98,7 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
           }}
         />
         <p
-          className="absolute z-10 text-[20px] font-medium leading-normal text-white"
+          className="absolute z-10 text-[20px] font-bold leading-normal text-white"
           style={{
             left: page.badge.textLeft,
             top: page.badge.textTop,
