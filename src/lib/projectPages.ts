@@ -429,10 +429,10 @@ export const PROJECT_PAGES: ProjectPageData[] = [
       },
       {
         src: "/images/projects/this-is-me/3-IMG_1212-2-1.png",
-        left: 542,
+        left: 539,
         top: 1373.5,
-        width: 428.5,
-        height: 364.15,
+        width: 434.5,
+        height: 364,
         objectFit: "contain",
       },
       {
