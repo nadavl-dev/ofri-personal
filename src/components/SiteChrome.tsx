@@ -32,12 +32,12 @@ export function SiteHeader({
       {centerLink ? (
         <Link
           href="/"
-          className="absolute left-[calc(50%-27px)] top-[45px] block h-[19px] w-[59px] text-[14px] font-medium leading-normal text-black"
+          className="absolute left-[calc(50%-44px)] top-[45px] block h-[19px] w-[84px] text-[14px] font-medium uppercase leading-normal text-black"
         >
           Ofri Azriel
         </Link>
       ) : (
-        <p className="absolute left-[calc(50%-27px)] top-[45px] h-[19px] w-[59px] text-[14px] font-medium leading-normal text-black">
+        <p className="absolute left-[calc(50%-44px)] top-[45px] h-[19px] w-[84px] text-[14px] font-medium uppercase leading-normal text-black">
           Ofri Azriel
         </p>
       )}
@@ -45,7 +45,7 @@ export function SiteHeader({
       <button
         type="button"
         onClick={toggleAbout}
-        className="absolute right-[30px] top-[44px] h-[17px] w-[36px] cursor-pointer border-0 bg-transparent p-0 text-right text-[14px] font-medium leading-normal text-black"
+        className="absolute right-[30px] top-[44px] h-[17px] w-[36px] cursor-pointer border-0 bg-transparent p-0 text-right text-[14px] font-light leading-normal text-black"
       >
         about
       </button>

@@ -71,7 +71,7 @@ export function MenuPanel() {
                 onClick={closePanels}
                 className="-mx-[30px] block px-[30px] py-[18px] text-[20px] leading-normal text-white no-underline transition-colors hover:bg-white hover:text-[#1c07fb]"
               >
-                <span className="font-semibold">{project.name}</span>
+                <span className="font-bold">{project.name}</span>
                 <span>{` \\ `}</span>
                 <span className="font-light">{project.subtitle}</span>
               </Link>

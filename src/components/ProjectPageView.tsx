@@ -89,23 +89,18 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
         ))}
 
         <div
-          className="absolute z-10 bg-[#1c07fb]"
+          className="absolute z-10 flex items-center justify-center bg-[#1c07fb]"
           style={{
             left: page.badge.left,
             top: page.badge.top,
             width: page.badge.width,
             height: page.badge.height,
           }}
-        />
-        <p
-          className="absolute z-10 text-[20px] font-medium leading-normal text-white"
-          style={{
-            left: page.badge.textLeft,
-            top: page.badge.textTop,
-          }}
         >
-          {page.badge.text}
-        </p>
+          <p className="text-[20px] font-bold leading-normal text-white">
+            {page.badge.text}
+          </p>
+        </div>
 
         <div
           className="absolute z-10 bg-white whitespace-pre-line text-[20px] font-light leading-normal text-black"
