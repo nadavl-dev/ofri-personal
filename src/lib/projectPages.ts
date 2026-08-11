@@ -417,8 +417,7 @@ export const PROJECT_PAGES: ProjectPageData[] = [
         top: 150,
         width: 595,
         height: 466,
-        imageClass:
-          "absolute h-[126.82%] left-[-38.22%] max-w-none top-[-26.82%] w-[176.44%]",
+        objectFit: "cover",
       },
       {
         src: "/images/projects/this-is-me/2-IMG_1211-1.png",
@@ -426,8 +425,7 @@ export const PROJECT_PAGES: ProjectPageData[] = [
         top: 1407,
         width: 315,
         height: 294,
-        imageClass:
-          "absolute h-[100.06%] left-[-40.32%] max-w-none top-[-0.03%] w-[166.03%]",
+        objectFit: "cover",
       },
       {
         src: "/images/projects/this-is-me/3-IMG_1212-2-1.png",
@@ -443,8 +441,7 @@ export const PROJECT_PAGES: ProjectPageData[] = [
         top: 1380,
         width: 415,
         height: 379,
-        imageClass:
-          "absolute h-[100.1%] left-[-31.25%] max-w-none top-[-0.05%] w-[162.5%]",
+        objectFit: "cover",
       },
     ],
     videoPlaceholders: [
