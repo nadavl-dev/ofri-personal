@@ -274,9 +274,9 @@
     {
       "slug": "dudu-tassa",
       "name": "Dudu Tassa",
-      "figmaName": "דף דודו טסה",
-      "nodeId": "71:1133",
-      "pageHeight": 2788,
+ "figmaName": "דף דודו טסה",
+ "nodeId": "71:1133",
+ "pageHeight": 2881,
       "badge": {
         "text": "Dudu Tassa",
         "left": 746,
@@ -298,7 +298,7 @@
         { "nodeId": "71:1183", "name": "תקליט רקע זז 1", "url": "https://www.figma.com/api/mcp/asset/a5e9150c-94c0-42d8-ab2c-1dcdf9e5551a.png", "left": 195, "top": 214, "width": 471, "height": 357 },
         { "nodeId": "71:1181", "name": "תקליט מוקאפ copy 4", "url": "https://www.figma.com/api/mcp/asset/04b297c5-ba3e-46e8-b25e-295d9ea06e0c.png", "left": 186, "top": 637, "width": 1147, "height": 860 },
         { "nodeId": "71:1184", "name": "צילום מסך 2026-08-07 ב-17.01.55 1", "url": "https://www.figma.com/api/mcp/asset/743f6d93-6bf7-431e-8192-700890da0781.png", "left": 186, "top": 1555, "width": 815, "height": 409 },
-        { "nodeId": "76:1187", "name": "צילום מסך 2026-08-07 ב-17.05.02 1", "url": "https://www.figma.com/api/mcp/asset/85125651-343b-4814-b670-99a390e8d77c.png", "left": 1050, "top": 1964, "width": 283, "height": 409, "rotation": -90, "innerWidth": 409, "innerHeight": 283 },
+        { "nodeId": "76:1187", "name": "צילום מסך 2026-08-07 ב-17.05.02 1", "url": "https://www.figma.com/api/mcp/asset/85125651-343b-4814-b670-99a390e8d77c.png", "left": 1050, "top": 1555, "width": 283, "height": 409 },
         { "nodeId": "76:1189", "name": "צילום מסך 2026-08-07 ב-17.06.30 1", "url": "https://www.figma.com/api/mcp/asset/1e83a366-a41b-4f2e-a190-ed7a63fde52c.png", "left": 175, "top": 2014, "width": 317, "height": 302 },
         { "nodeId": "76:1185", "name": "מדבקות 1", "url": "https://www.figma.com/api/mcp/asset/b82d900b-f812-4b62-a256-f0e8c5d786a4.png", "left": 582, "top": 2014, "width": 747, "height": 560 },
         { "nodeId": "76:1188", "name": "צילום מסך 2026-08-07 ב-17.06.21 1", "url": "https://www.figma.com/api/mcp/asset/26106f4c-b3e7-4bef-9da8-2f41bb693138.png", "left": 169, "top": 2322, "width": 313, "height": 317 }

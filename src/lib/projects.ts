@@ -192,12 +192,10 @@ export const PROJECTS: Project[] = [
     thumbnail: {
       src: "/images/home/dudu-tassa.png",
       hoverSrc: "/images/hover/dudu-tassa.png",
-      left: 1025,
+      left: 1023,
       top: 778,
       width: 93,
       height: 123,
-      imageClass:
-        "absolute h-[346.59%] left-[-246.92%] max-w-none top-[-83.16%] w-[613.49%]",
     },
   },
 ];
