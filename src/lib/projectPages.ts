@@ -417,27 +417,23 @@ export const PROJECT_PAGES: ProjectPageData[] = [
         top: 150,
         width: 595,
         height: 466,
-        imageClass:
-          "absolute h-[126.82%] left-[-38.22%] max-w-none top-[-26.82%] w-[176.44%]",
+        objectFit: "cover",
       },
       {
         src: "/images/projects/this-is-me/2-IMG_1211-1.png",
-        left: 291,
+        left: 220,
         top: 1407,
         width: 315,
         height: 294,
-        imageClass:
-          "absolute h-[100.06%] left-[-40.32%] max-w-none top-[-0.03%] w-[166.03%]",
+        objectFit: "cover",
       },
       {
         src: "/images/projects/this-is-me/3-IMG_1212-2-1.png",
-        left: 634,
-        top: 1368,
-        width: 423.88,
-        height: 358.667,
-        rotation: -0.74,
-        imageClass:
-          "absolute h-[188.54%] left-[-197.72%] max-w-none top-[-57.51%] w-[283.62%]",
+        left: 542,
+        top: 1373.5,
+        width: 428.5,
+        height: 364.15,
+        objectFit: "contain",
       },
       {
         src: "/images/projects/this-is-me/4-IMG_1216-1.png",
@@ -445,11 +441,18 @@ export const PROJECT_PAGES: ProjectPageData[] = [
         top: 1380,
         width: 415,
         height: 379,
-        imageClass:
-          "absolute h-[100.1%] left-[-31.25%] max-w-none top-[-0.05%] w-[162.5%]",
+        objectFit: "cover",
       },
     ],
-    videoPlaceholders: [{ left: 132, top: 557, width: 1280, height: 720 }],
+    videoPlaceholders: [
+      {
+        left: 132,
+        top: 557,
+        width: 1280,
+        height: 720,
+        src: "/images/projects/this-is-me/zot-ani.mp4",
+      },
+    ],
   },
 ];
 
