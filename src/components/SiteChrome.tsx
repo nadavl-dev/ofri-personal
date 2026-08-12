@@ -54,20 +54,18 @@ export function SiteHeader({
 }
 
 export function SiteFooter({
-  emailLeft = 59,
+  emailLeft = 57,
   emailTop = 934,
-  instagramLeft = 205,
+  instagramLeft = 212,
 }: {
   emailLeft?: number;
   emailTop?: number;
   instagramLeft?: number;
   instagramTop?: number;
 }) {
-  const instagramGap = instagramLeft - emailLeft;
-
   return (
     <div
-      className="absolute flex items-center"
+      className="absolute"
       style={{ left: emailLeft, top: emailTop }}
     >
       <a
@@ -80,8 +78,8 @@ export function SiteFooter({
         href={INSTAGRAM_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[14px] font-light leading-[18px] text-black no-underline hover:opacity-80"
-        style={{ marginLeft: instagramGap }}
+        className="absolute top-0 whitespace-nowrap text-[14px] font-light leading-[18px] text-black no-underline hover:opacity-80"
+        style={{ left: instagramLeft - emailLeft }}
       >
         {INSTAGRAM_LABEL}
       </a>

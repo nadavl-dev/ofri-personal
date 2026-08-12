@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { ACCENT_BLUE, PANEL_WIDTH } from "@/lib/constants";
+import { ACCENT_BLUE, PANEL_WIDTH, SITE_HEIGHT } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects";
-import { usePanels } from "./PanelProvider";
+import { usePanels, usePanelScale } from "./PanelProvider";
 
 const ABOUT_TEXT = [
   "Hi, I’m Ofri Azriel. I recently completed my second year of the Visual Communication program at Shenkar College.",
@@ -13,6 +13,24 @@ const ABOUT_TEXT = [
   "I’m especially interested in tactile design and printed matter, and I enjoy creating work that people can experience not only visually, but also physically through materials, texture, and production.",
   "My work is driven by curiosity, attention to detail, and the belief that good design should communicate clearly while leaving a lasting impression. I’m always looking for opportunities to learn, collaborate, and continue growing as a designer.",
 ];
+
+// Menu order and divider positions from the Figma homepage frame (52:649).
+const MENU_ORDER = [
+  "oxide",
+  "who-am-i",
+  "triz",
+  "coral-atlas",
+  "hitchcock",
+  "crumples",
+  "four-directions",
+  "this-is-me",
+  "trails",
+  "bear-umbrella-loser",
+  "dudu-tassa",
+  "gus-van-sant",
+];
+
+const MENU_DIVIDERS = [91, 169, 247, 325, 403, 481, 559, 637, 716, 794, 872];
 
 function usePortalTarget() {
   const [target, setTarget] = useState<HTMLElement | null>(null);
@@ -42,45 +60,91 @@ function PanelOverlay({
   );
 }
 
+/**
+ * Renders panel content designed on the Figma 350x982 canvas, scaled to the
+ * viewport height so everything always fits without scrolling.
+ */
+function PanelCanvas({
+  scale,
+  children,
+}: {
+  scale: number;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      className="relative origin-top-left"
+      style={{
+        width: PANEL_WIDTH,
+        height: SITE_HEIGHT,
+        transform: `scale(${scale})`,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
 export function MenuPanel() {
   const { panel, closePanels } = usePanels();
   const portalTarget = usePortalTarget();
+  const scale = usePanelScale();
   const open = panel === "menu";
 
   if (!portalTarget) {
     return null;
   }
 
+  const menuProjects = MENU_ORDER.map(
+    (slug) => PROJECTS.find((project) => project.slug === slug)!,
+  );
+
   return createPortal(
     <>
       <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto bg-[#1c07fb] text-white transition-transform duration-300 ease-out [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="fixed top-0 z-50 h-[100dvh] overflow-hidden bg-[#1c07fb] text-white transition-transform duration-300 ease-out"
         style={{
-          width: PANEL_WIDTH,
+          width: PANEL_WIDTH * scale,
           left: 0,
           transform: open ? "translateX(0)" : "translateX(-100%)",
         }}
         aria-hidden={!open}
       >
-        <nav className="px-[30px] py-[36px]">
-          {PROJECTS.map((project, index) => (
-            <div key={project.slug}>
-              <Link
-                href={`/projects/${project.slug}`}
-                onClick={closePanels}
-                className="-mx-[30px] block px-[30px] py-[18px] text-[20px] leading-normal text-white no-underline transition-colors hover:bg-white hover:text-[#1c07fb]"
-              >
-                <span className="font-bold">{project.name}</span>
-                <span>{` \\ `}</span>
-                <span className="font-light">{project.subtitle}</span>
-              </Link>
-              {index < PROJECTS.length - 1 ? (
-                <div className="-mx-[30px] h-px bg-white" />
-              ) : null}
-            </div>
-          ))}
-        </nav>
+        <PanelCanvas scale={scale}>
+          <nav>
+            {menuProjects.map((project, index) => {
+              const rowTop = index === 0 ? 0 : MENU_DIVIDERS[index - 1];
+              const rowBottom =
+                index < MENU_DIVIDERS.length
+                  ? MENU_DIVIDERS[index]
+                  : SITE_HEIGHT;
+
+              return (
+                <Link
+                  key={project.slug}
+                  href={`/projects/${project.slug}`}
+                  onClick={closePanels}
+                  className="absolute left-0 flex w-full items-center text-[20px] leading-normal text-white no-underline transition-colors hover:bg-white hover:text-[#1c07fb]"
+                  style={{ top: rowTop, height: rowBottom - rowTop }}
+                >
+                  <span className="block w-[301px] pl-[26px]">
+                    <span className="font-bold">{project.name}</span>
+                    <span>{` \\ `}</span>
+                    <span className="font-light">{project.subtitle}</span>
+                  </span>
+                </Link>
+              );
+            })}
+            {MENU_DIVIDERS.map((top) => (
+              <div
+                key={top}
+                className="pointer-events-none absolute left-0 h-px w-full bg-white"
+                style={{ top }}
+              />
+            ))}
+          </nav>
+        </PanelCanvas>
       </aside>
     </>,
     portalTarget,
@@ -90,6 +154,7 @@ export function MenuPanel() {
 export function AboutPanel() {
   const { panel, closePanels } = usePanels();
   const portalTarget = usePortalTarget();
+  const scale = usePanelScale();
   const open = panel === "about";
 
   if (!portalTarget) {
@@ -100,19 +165,19 @@ export function AboutPanel() {
     <>
       <PanelOverlay open={open} onClose={closePanels} />
       <aside
-        className="fixed top-0 z-50 h-[100dvh] overflow-y-auto text-white transition-transform duration-300 ease-out [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="fixed top-0 z-50 h-[100dvh] overflow-hidden text-white transition-transform duration-300 ease-out"
         style={{
-          width: PANEL_WIDTH,
+          width: PANEL_WIDTH * scale,
           right: 0,
           backgroundColor: ACCENT_BLUE,
           transform: open ? "translateX(0)" : "translateX(100%)",
         }}
         aria-hidden={!open}
       >
-        <div className="relative flex min-h-full flex-col px-[30px] pb-[26px] pt-[38px]">
+        <PanelCanvas scale={scale}>
           <div
-            className="relative mb-[24px] w-[126px] overflow-hidden"
-            style={{ aspectRatio: "126 / 166" }}
+            className="absolute overflow-hidden"
+            style={{ left: 30, top: 38, width: 190, height: 250 }}
           >
             <div className="absolute inset-0 -scale-x-100 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -130,13 +195,19 @@ export function AboutPanel() {
             </div>
           </div>
 
-          <div className="space-y-4 text-[14px] font-medium leading-normal">
+          <div
+            className="absolute space-y-4 text-[14px] font-light leading-normal"
+            style={{ left: 30, top: 316, width: 287 }}
+          >
             {ABOUT_TEXT.map((paragraph) => (
               <p key={paragraph.slice(0, 24)}>{paragraph}</p>
             ))}
           </div>
 
-          <div className="mt-auto flex flex-col gap-[2px] pt-10 text-[14px] font-light underline">
+          <div
+            className="absolute flex flex-col text-[14px] font-light leading-[18px]"
+            style={{ left: 21, top: 919 }}
+          >
             <button
               type="button"
               className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline"
@@ -150,7 +221,7 @@ export function AboutPanel() {
               Recommendations
             </button>
           </div>
-        </div>
+        </PanelCanvas>
       </aside>
     </>,
     portalTarget,
