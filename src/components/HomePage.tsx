@@ -7,7 +7,7 @@ import { SITE_HEIGHT, SITE_WIDTH } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects";
 import { usePanels } from "./PanelProvider";
 import { AboutPanel, MenuPanel } from "./SitePanels";
-import { SiteFooter, SiteHeader } from "./SiteChrome";
+import { SiteHeader, ViewportFooter } from "./SiteChrome";
 import { SiteScale } from "./SiteScale";
 
 const SWIPE_THRESHOLD = 120;
@@ -79,7 +79,7 @@ export function HomePage() {
         style={{ width: SITE_WIDTH, height: SITE_HEIGHT }}
       >
         <SiteHeader />
-        <SiteFooter />
+        <ViewportFooter />
 
         {PROJECTS.map((project) => (
           <Link

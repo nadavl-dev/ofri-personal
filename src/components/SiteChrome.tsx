@@ -101,6 +101,57 @@ export function SiteHeader({
   );
 }
 
+/**
+ * Homepage footer pinned to the real viewport edge (like the header edge
+ * buttons), so it aligns with the hamburger instead of the centered canvas.
+ */
+export function ViewportFooter() {
+  const { panel } = usePanels();
+  const scale = usePanelScale();
+  const [target, setTarget] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setTarget(document.body);
+  }, []);
+
+  if (!target) {
+    return null;
+  }
+
+  const panelWidth = Math.round(PANEL_WIDTH * scale);
+  const shift =
+    panel === "menu" ? panelWidth : panel === "about" ? -panelWidth : 0;
+
+  return createPortal(
+    <div
+      className="fixed z-30 transition-transform duration-300 ease-out"
+      style={{
+        left: 36,
+        top: 934 * scale,
+        fontSize: 14 * scale,
+        transform: `translateX(${shift}px)`,
+      }}
+    >
+      <a
+        href={`mailto:${EMAIL}`}
+        className="font-light leading-[18px] text-black no-underline hover:opacity-80"
+      >
+        {EMAIL}
+      </a>
+      <a
+        href={INSTAGRAM_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-0 whitespace-nowrap font-light leading-[18px] text-black no-underline hover:opacity-80"
+        style={{ left: 155 * scale }}
+      >
+        {INSTAGRAM_LABEL}
+      </a>
+    </div>,
+    target,
+  );
+}
+
 export function SiteFooter({
   emailLeft = 57,
   emailTop = 934,
