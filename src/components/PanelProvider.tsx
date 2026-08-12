@@ -86,15 +86,19 @@ export function PanelPushContainer({ children }: { children: ReactNode }) {
   const scale = usePanelScale();
   const panelWidth = Math.round(PANEL_WIDTH * scale);
 
+  // Slide the whole page aside (no resizing/reflow) so content keeps its
+  // scale while a panel is open, exactly like the Figma prototype.
+  const shift =
+    panel === "menu" ? panelWidth : panel === "about" ? -panelWidth : 0;
+
   return (
-    <div
-      className="min-h-[100dvh] transition-[padding] duration-300 ease-out"
-      style={{
-        paddingLeft: panel === "menu" ? panelWidth : 0,
-        paddingRight: panel === "about" ? panelWidth : 0,
-      }}
-    >
-      {children}
+    <div className="overflow-x-clip">
+      <div
+        className="min-h-[100dvh] transition-transform duration-300 ease-out"
+        style={{ transform: `translateX(${shift}px)` }}
+      >
+        {children}
+      </div>
     </div>
   );
 }
