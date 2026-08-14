@@ -409,6 +409,26 @@ export const PROJECT_PAGES: ProjectPageData[] = [
     .map(mapJsonPage),
   {
     ...mapJsonPage(pagesJson.pages.find((page) => page.slug === "trails")!),
+    images: [
+      {
+        src: "/images/projects/trails/hero.png",
+        left: 158.84,
+        top: 212,
+        width: 387.53,
+        height: 397,
+        objectFit: "cover",
+      },
+      // Pin SVG is 17x27 including its drop shadow; the visible pin (7x18)
+      // sits at Figma (364.11, 390), which puts the SVG origin at (359.11, 389).
+      {
+        src: "/images/projects/trails/3-Vector-map-pin-arrow-.svg",
+        left: 359.11,
+        top: 389,
+        width: 17,
+        height: 27,
+        objectFit: "contain",
+      },
+    ],
     heroHover: {
       trigger: { left: 158.84, top: 212, width: 387.53, height: 397 },
       overlay: {
