@@ -1,16 +1,23 @@
 "use client";
 
-import { SITE_WIDTH } from "@/lib/constants";
+import { SITE_HEIGHT, SITE_WIDTH } from "@/lib/constants";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export function SiteScale({
   children,
   contentHeight,
   fitToViewport = false,
+  matchHomepageScale = false,
 }: {
   children: ReactNode;
   contentHeight: number;
   fitToViewport?: boolean;
+  /**
+   * Scale with the same formula as the homepage (fit a 1512x982 viewport),
+   * while remaining vertically scrollable. Keeps text/name sizes identical
+   * across pages.
+   */
+  matchHomepageScale?: boolean;
 }) {
   const outerRef = useRef<HTMLDivElement | null>(null);
   const [scale, setScale] = useState(1);
@@ -29,6 +36,13 @@ export function SiteScale({
             viewportHeight / contentHeight,
           ),
         );
+      } else if (matchHomepageScale) {
+        setScale(
+          Math.min(
+            containerWidth / SITE_WIDTH,
+            window.innerHeight / SITE_HEIGHT,
+          ),
+        );
       } else {
         setScale(Math.min(1, containerWidth / SITE_WIDTH));
       }
@@ -42,7 +56,7 @@ export function SiteScale({
       observer.disconnect();
       window.removeEventListener("resize", updateScale);
     };
-  }, [fitToViewport, contentHeight]);
+  }, [fitToViewport, matchHomepageScale, contentHeight]);
 
   if (fitToViewport) {
     return (

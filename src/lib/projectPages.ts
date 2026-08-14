@@ -10,6 +10,8 @@ export type ProjectImage = {
   objectFit?: "cover" | "contain";
   imageClass?: string;
   animated?: boolean;
+  /** Video keeps its audio track and unmutes on first user interaction. */
+  sound?: boolean;
 };
 
 export type ProjectPageData = {
@@ -109,6 +111,7 @@ const oxidePage: ProjectPageData = {
       width: 374,
       height: 523,
       objectFit: "cover",
+      sound: true,
     },
   ],
   footer: {
