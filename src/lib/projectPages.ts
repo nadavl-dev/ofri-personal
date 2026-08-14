@@ -40,6 +40,17 @@ export type ProjectPageData = {
     height: number;
     src?: string;
   }>;
+  /** Hover-reveal photo card (Figma prototype interaction), e.g. Trails hero map. */
+  heroHover?: {
+    trigger: { left: number; top: number; width: number; height: number };
+    overlay: {
+      src: string;
+      left: number;
+      top: number;
+      width: number;
+      height: number;
+    };
+  };
   footer: {
     email: { left: number; top: number; text: string };
     instagram: { left: number; top: number; text: string };
@@ -386,11 +397,29 @@ export const PROJECT_PAGES: ProjectPageData[] = [
   ...pagesJson.pages
     .filter(
       (page) =>
-        !["who-am-i", "oxide", "triz", "coral-atlas", "this-is-me"].includes(
-          page.slug,
-        ),
+        ![
+          "who-am-i",
+          "oxide",
+          "triz",
+          "coral-atlas",
+          "this-is-me",
+          "trails",
+        ].includes(page.slug),
     )
     .map(mapJsonPage),
+  {
+    ...mapJsonPage(pagesJson.pages.find((page) => page.slug === "trails")!),
+    heroHover: {
+      trigger: { left: 158.84, top: 212, width: 387.53, height: 397 },
+      overlay: {
+        src: "/images/projects/trails/hover-card.png",
+        left: 505,
+        top: 512,
+        width: 272,
+        height: 274,
+      },
+    },
+  },
   {
     ...mapJsonPage(pagesJson.pages.find((page) => page.slug === "this-is-me")!),
     pageHeight: 1820,
