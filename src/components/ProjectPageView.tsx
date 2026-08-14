@@ -59,7 +59,7 @@ function SoundVideo({ src }: { src: string }) {
 
 export function ProjectPageView({ page }: { page: ProjectPageData }) {
   return (
-    <SiteScale contentHeight={page.pageHeight}>
+    <SiteScale contentHeight={page.pageHeight} matchHomepageScale>
       <main
         className="relative bg-white"
         style={{ width: SITE_WIDTH, height: page.pageHeight }}
@@ -86,7 +86,9 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
                 : undefined,
             }}
           >
-            {image.src.endsWith(".mp4") ? (
+            {image.src.endsWith(".mp4") && image.sound ? (
+              <SoundVideo src={image.src} />
+            ) : image.src.endsWith(".mp4") ? (
               <video
                 src={image.src}
                 autoPlay
