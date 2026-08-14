@@ -1,11 +1,61 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { SITE_WIDTH } from "@/lib/constants";
 import type { ProjectPageData } from "@/lib/projectPages";
 import { AboutPanel, MenuPanel } from "./SitePanels";
 import { SiteFooter, SiteHeader } from "./SiteChrome";
 import { SiteScale } from "./SiteScale";
+
+/**
+ * Main project video: autoplays muted (browser requirement), then unmutes on
+ * the user's first interaction with the page. Clicking the video toggles
+ * sound afterwards.
+ */
+function SoundVideo({ src }: { src: string }) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const unlocked = useRef(false);
+
+  useEffect(() => {
+    const unmute = () => {
+      const video = videoRef.current;
+      if (!video || unlocked.current) return;
+      unlocked.current = true;
+      video.muted = false;
+      video.play().catch(() => {
+        // If unmuted playback is rejected, fall back to muted playback.
+        video.muted = true;
+        video.play().catch(() => {});
+      });
+    };
+
+    window.addEventListener("pointerdown", unmute, { once: true });
+    window.addEventListener("keydown", unmute, { once: true });
+    return () => {
+      window.removeEventListener("pointerdown", unmute);
+      window.removeEventListener("keydown", unmute);
+    };
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      src={src}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="size-full cursor-pointer object-cover"
+      onClick={() => {
+        const video = videoRef.current;
+        if (!video) return;
+        unlocked.current = true;
+        video.muted = !video.muted;
+      }}
+    />
+  );
+}
 
 export function ProjectPageView({ page }: { page: ProjectPageData }) {
   return (
@@ -75,25 +125,16 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
               height: placeholder.height,
             }}
           >
-            {placeholder.src ? (
-              <video
-                src={placeholder.src}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="size-full object-cover"
-              />
-            ) : null}
+            {placeholder.src ? <SoundVideo src={placeholder.src} /> : null}
           </div>
         ))}
 
         <div
-          className="absolute z-20 flex items-center justify-center bg-[#1c07fb]"
+          className="absolute z-20 inline-flex items-center justify-center whitespace-nowrap bg-[#1c07fb] px-[15px]"
           style={{
             left: page.badge.left,
             top: page.badge.top,
-            width: page.badge.width,
+            minWidth: page.badge.width,
             height: page.badge.height,
           }}
         >
