@@ -171,7 +171,7 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
         </div>
 
         <div
-          className="absolute z-10 bg-white whitespace-pre-line text-[20px] font-light leading-normal text-black"
+          className="absolute z-10 bg-white whitespace-pre-line text-[20px] font-light leading-[24px] text-black"
           style={{
             left: page.description.left,
             top: page.description.top,
