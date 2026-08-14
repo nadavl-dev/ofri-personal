@@ -180,8 +180,7 @@ export const PROJECTS: Project[] = [
       top: 778,
       width: 93,
       height: 123,
-      imageClass:
-        "absolute h-[147.94%] left-[-12.32%] max-w-none top-[-36.43%] w-[146.75%]",
+      imageClass: "object-cover",
     },
   },
   {
