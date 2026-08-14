@@ -40,6 +40,17 @@ export type ProjectPageData = {
     height: number;
     src?: string;
   }>;
+  /** Hover-reveal photo card (Figma prototype interaction), e.g. Trails hero map. */
+  heroHover?: {
+    trigger: { left: number; top: number; width: number; height: number };
+    overlay: {
+      src: string;
+      left: number;
+      top: number;
+      width: number;
+      height: number;
+    };
+  };
   footer: {
     email: { left: number; top: number; text: string };
     instagram: { left: number; top: number; text: string };
@@ -386,11 +397,49 @@ export const PROJECT_PAGES: ProjectPageData[] = [
   ...pagesJson.pages
     .filter(
       (page) =>
-        !["who-am-i", "oxide", "triz", "coral-atlas", "this-is-me"].includes(
-          page.slug,
-        ),
+        ![
+          "who-am-i",
+          "oxide",
+          "triz",
+          "coral-atlas",
+          "this-is-me",
+          "trails",
+        ].includes(page.slug),
     )
     .map(mapJsonPage),
+  {
+    ...mapJsonPage(pagesJson.pages.find((page) => page.slug === "trails")!),
+    images: [
+      {
+        src: "/images/projects/trails/hero.png",
+        left: 158.84,
+        top: 212,
+        width: 387.53,
+        height: 397,
+        objectFit: "cover",
+      },
+      // Pin SVG is 17x27 including its drop shadow; the visible pin (7x18)
+      // sits at Figma (364.11, 390), which puts the SVG origin at (359.11, 389).
+      {
+        src: "/images/projects/trails/3-Vector-map-pin-arrow-.svg",
+        left: 359.11,
+        top: 389,
+        width: 17,
+        height: 27,
+        objectFit: "contain",
+      },
+    ],
+    heroHover: {
+      trigger: { left: 158.84, top: 212, width: 387.53, height: 397 },
+      overlay: {
+        src: "/images/projects/trails/hover-card.png",
+        left: 505,
+        top: 512,
+        width: 272,
+        height: 274,
+      },
+    },
+  },
   {
     ...mapJsonPage(pagesJson.pages.find((page) => page.slug === "this-is-me")!),
     pageHeight: 1820,

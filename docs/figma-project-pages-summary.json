@@ -2,11 +2,37 @@
   "fileKey": "MaL8D4NHTEHoMw5WFjXmES",
   "designWidth": 1512,
   "sharedChrome": {
-    "backButton": { "left": 49, "top": 39, "width": 26.357, "height": 10 },
-    "siteTitle": { "text": "Ofri Azriel", "left": 725, "top": 45, "width": 59, "height": 19 },
-    "badgeStyle": { "background": "#1c07fb", "height": 35, "fontSize": 20, "fontWeight": "Medium", "textColor": "#ffffff" },
-    "descriptionStyle": { "fontSize": 20, "fontWeight": "Light", "color": "#000000" },
-    "footerStyle": { "fontSize": 14, "fontWeight": "Light", "emailText": "ofri698@gmail.com", "instagramText": "instagram" }
+    "backButton": {
+      "left": 49,
+      "top": 39,
+      "width": 26.357,
+      "height": 10
+    },
+    "siteTitle": {
+      "text": "Ofri Azriel",
+      "left": 725,
+      "top": 45,
+      "width": 59,
+      "height": 19
+    },
+    "badgeStyle": {
+      "background": "#1c07fb",
+      "height": 35,
+      "fontSize": 20,
+      "fontWeight": "Medium",
+      "textColor": "#ffffff"
+    },
+    "descriptionStyle": {
+      "fontSize": 20,
+      "fontWeight": "Light",
+      "color": "#000000"
+    },
+    "footerStyle": {
+      "fontSize": 14,
+      "fontWeight": "Light",
+      "emailText": "ofri698@gmail.com",
+      "instagramText": "instagram"
+    }
   },
   "pages": [
     {
@@ -33,16 +59,78 @@
         "text": "A visual exploration inspired by Alfred Hitchcock and his approach to suspense. The project focuses on the tension between what is revealed and what remains hidden, using fragmented portraits, blur, shadow, and movement to create a sense of uncertainty and anticipation. Developed through a series of posters, a folded print piece, and a short moving-image experiment, the project translates Hitchcock’s cinematic language into a visual system across print and motion."
       },
       "images": [
-        { "nodeId": "92:1884", "name": "IMG_3591 1", "url": "https://www.figma.com/api/mcp/asset/b220c5f8-955d-4841-aee4-d6628ae139ac.png", "left": 215, "top": 220, "width": 512, "height": 290 },
-        { "nodeId": "92:1885", "name": "צילום מסך 2026-08-07 ב-23.08.51 1", "url": "https://www.figma.com/api/mcp/asset/1a3fce33-aadc-44a3-b404-d30e82730af6.png", "left": 187, "top": 678, "width": 467, "height": 667 },
-        { "nodeId": "92:1886", "name": "צילום מסך 2026-08-07 ב-23.10.12 1", "url": "https://www.figma.com/api/mcp/asset/a2832199-fe50-4087-bcbe-34ebfd1b57b8.png", "left": 709, "top": 560, "width": 391, "height": 548 },
-        { "nodeId": "92:1887", "name": "צילום מסך 2026-08-07 ב-23.10.34 1", "url": "https://www.figma.com/api/mcp/asset/ee869b4c-097d-44ae-8b6f-93b1476f727b.png", "left": 1027, "top": 559, "width": 392, "height": 549 },
-        { "nodeId": "92:1889", "name": "IMG_3852 1", "url": "https://www.figma.com/api/mcp/asset/9374f56a-b2f5-4e9e-af4d-2b70f91b2a76.png", "left": 772, "top": 1115, "width": 419, "height": 798 },
-        { "nodeId": "92:1890", "name": "IMG_3654 1", "url": "https://www.figma.com/api/mcp/asset/0aba01d0-199d-40bf-aeb9-f5fc0634ec8f.png", "left": 187, "top": 1413, "width": 513, "height": 684 }
+        {
+          "nodeId": "92:1884",
+          "name": "IMG_3591 1",
+          "url": "https://www.figma.com/api/mcp/asset/b220c5f8-955d-4841-aee4-d6628ae139ac.png",
+          "left": 215,
+          "top": 220,
+          "width": 512,
+          "height": 290
+        },
+        {
+          "nodeId": "92:1885",
+          "name": "צילום מסך 2026-08-07 ב-23.08.51 1",
+          "url": "https://www.figma.com/api/mcp/asset/1a3fce33-aadc-44a3-b404-d30e82730af6.png",
+          "left": 187,
+          "top": 678,
+          "width": 467,
+          "height": 667
+        },
+        {
+          "nodeId": "92:1886",
+          "name": "צילום מסך 2026-08-07 ב-23.10.12 1",
+          "url": "https://www.figma.com/api/mcp/asset/a2832199-fe50-4087-bcbe-34ebfd1b57b8.png",
+          "left": 709,
+          "top": 560,
+          "width": 391,
+          "height": 548
+        },
+        {
+          "nodeId": "92:1887",
+          "name": "צילום מסך 2026-08-07 ב-23.10.34 1",
+          "url": "https://www.figma.com/api/mcp/asset/ee869b4c-097d-44ae-8b6f-93b1476f727b.png",
+          "left": 1027,
+          "top": 559,
+          "width": 392,
+          "height": 549
+        },
+        {
+          "nodeId": "92:1889",
+          "name": "IMG_3852 1",
+          "url": "https://www.figma.com/api/mcp/asset/9374f56a-b2f5-4e9e-af4d-2b70f91b2a76.png",
+          "left": 772,
+          "top": 1115,
+          "width": 419,
+          "height": 798
+        },
+        {
+          "nodeId": "92:1890",
+          "name": "IMG_3654 1",
+          "url": "https://www.figma.com/api/mcp/asset/0aba01d0-199d-40bf-aeb9-f5fc0634ec8f.png",
+          "left": 187,
+          "top": 1413,
+          "width": 513,
+          "height": 684
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1257", "text": "ofri698@gmail.com", "left": 69, "top": 2325, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "85:1258", "text": "instagram", "left": 215, "top": 2325, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "85:1257",
+          "text": "ofri698@gmail.com",
+          "left": 69,
+          "top": 2325,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "85:1258",
+          "text": "instagram",
+          "left": 215,
+          "top": 2325,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": []
     },
@@ -70,23 +158,124 @@
         "text": "Trails is a travel platform designed around the people we meet and follow along the way. Users can discover travelers, follow their journeys, explore places through personal stories, and document their own experiences through maps, journals, photos, and conversations. The project focuses on creating a more personal and community-driven way to experience and share travel."
       },
       "images": [
-        { "nodeId": "111:4643", "name": "Group 14 (hero)", "url": "https://www.figma.com/api/mcp/asset/61325a0d-e651-4859-8196-53ab8cae10f5.svg", "left": 158.84, "top": 212, "width": 387.532, "height": 397 },
-        { "nodeId": "111:3892", "name": "Group (map background)", "url": "https://www.figma.com/api/mcp/asset/10967b31-b204-4f06-9b73-361ea639297e.svg", "positioning": "inset: top 1.81%, right 61.27%, bottom 72.67%, left 9.46%", "opacity": 0.36, "note": "Rotated 90deg inside container" },
-        { "nodeId": "111:4646", "name": "Vector (map pin arrow)", "url": "https://www.figma.com/api/mcp/asset/80af29a6-31bc-4ddd-8095-6f03b7f5ecd7.svg", "left": 364.11, "top": 390, "width": 7, "height": 18 }
+        {
+          "nodeId": "111:4643",
+          "name": "Group 14 (hero)",
+          "url": "https://www.figma.com/api/mcp/asset/61325a0d-e651-4859-8196-53ab8cae10f5.svg",
+          "left": 158.84,
+          "top": 212,
+          "width": 387.532,
+          "height": 397
+        },
+        {
+          "nodeId": "111:3892",
+          "name": "Group (map background)",
+          "url": "https://www.figma.com/api/mcp/asset/10967b31-b204-4f06-9b73-361ea639297e.svg",
+          "positioning": "inset: top 1.81%, right 61.27%, bottom 72.67%, left 9.46%",
+          "opacity": 0.36,
+          "note": "Rotated 90deg inside container"
+        },
+        {
+          "nodeId": "111:4646",
+          "name": "Vector (map pin arrow)",
+          "url": "https://www.figma.com/api/mcp/asset/80af29a6-31bc-4ddd-8095-6f03b7f5ecd7.svg",
+          "left": 364.11,
+          "top": 390,
+          "width": 7,
+          "height": 18
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1300", "text": "ofri698@gmail.com", "left": 72, "top": 2589, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "85:1301", "text": "instagram", "left": 218, "top": 2589, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "85:1300",
+          "text": "ofri698@gmail.com",
+          "left": 72,
+          "top": 2589,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "85:1301",
+          "text": "instagram",
+          "left": 218,
+          "top": 2589,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": [
-        { "nodeId": "104:2759", "name": "הקלטת מסך 2026-08-08 ב-0.42.03 1", "left": 797.11, "top": 872, "width": 563, "height": 367 },
-        { "nodeId": "104:2765", "name": "הקלטת מסך 2026-08-08 ב-0.52.05 1", "left": 160.11, "top": 872, "width": 564, "height": 367 },
-        { "nodeId": "104:2761", "name": "הקלטת מסך 2026-08-08 ב-0.43.57 1", "left": 160.11, "top": 1313, "width": 565, "height": 367 },
-        { "nodeId": "104:2764", "name": "הקלטת מסך 2026-08-08 ב-0.50.38 1", "left": 796.11, "top": 1313, "width": 564, "height": 367 },
-        { "nodeId": "111:2769", "name": "הקלטת מסך 2026-08-08 ב-1.00.13 1", "left": 162.11, "top": 1766, "width": 274, "height": 599 },
-        { "nodeId": "111:2768", "name": "הקלטת מסך 2026-08-08 ב-0.58.42 1", "left": 469.11, "top": 1766, "width": 275, "height": 599 },
-        { "nodeId": "111:2766", "name": "הקלטת מסך 2026-08-08 ב-0.55.57 1", "left": 778.11, "top": 1766, "width": 274, "height": 599 },
-        { "nodeId": "111:2767", "name": "הקלטת מסך 2026-08-08 ב-0.56.42 1", "left": 1086.11, "top": 1766, "width": 274, "height": 599 }
+        {
+          "nodeId": "104:2759",
+          "name": "הקלטת מסך 2026-08-08 ב-0.42.03 1",
+          "left": 797.11,
+          "top": 872,
+          "width": 563,
+          "height": 367,
+          "src": "/images/projects/trails/explorers.mp4"
+        },
+        {
+          "nodeId": "104:2765",
+          "name": "הקלטת מסך 2026-08-08 ב-0.52.05 1",
+          "left": 160.11,
+          "top": 872,
+          "width": 564,
+          "height": 367,
+          "src": "/images/projects/trails/landing.mp4"
+        },
+        {
+          "nodeId": "104:2761",
+          "name": "הקלטת מסך 2026-08-08 ב-0.43.57 1",
+          "left": 160.11,
+          "top": 1313,
+          "width": 565,
+          "height": 367,
+          "src": "/images/projects/trails/car-window.mp4"
+        },
+        {
+          "nodeId": "104:2764",
+          "name": "הקלטת מסך 2026-08-08 ב-0.50.38 1",
+          "left": 796.11,
+          "top": 1313,
+          "width": 564,
+          "height": 367,
+          "src": "/images/projects/trails/loved-by.mp4"
+        },
+        {
+          "nodeId": "111:2769",
+          "name": "הקלטת מסך 2026-08-08 ב-1.00.13 1",
+          "left": 162.11,
+          "top": 1766,
+          "width": 274,
+          "height": 599,
+          "src": "/images/projects/trails/live.mp4"
+        },
+        {
+          "nodeId": "111:2768",
+          "name": "הקלטת מסך 2026-08-08 ב-0.58.42 1",
+          "left": 469.11,
+          "top": 1766,
+          "width": 275,
+          "height": 599,
+          "src": "/images/projects/trails/journal.mp4"
+        },
+        {
+          "nodeId": "111:2766",
+          "name": "הקלטת מסך 2026-08-08 ב-0.55.57 1",
+          "left": 778.11,
+          "top": 1766,
+          "width": 274,
+          "height": 599,
+          "src": "/images/projects/trails/signup.mp4"
+        },
+        {
+          "nodeId": "111:2767",
+          "name": "הקלטת מסך 2026-08-08 ב-0.56.42 1",
+          "left": 1086.11,
+          "top": 1766,
+          "width": 274,
+          "height": 599,
+          "src": "/images/projects/trails/map-profile.mp4"
+        }
       ]
     },
     {
@@ -113,16 +302,78 @@
         "text": "A visual identity for a retrospective dedicated to filmmaker Gus Van Sant, developed across a poster, folded program, and book cover. Typography plays a central role in the project, using scale, hierarchy, and the relationship between Hebrew and English to create a flexible editorial system. Fragmented imagery and soft photography are integrated into the typographic compositions, reflecting the sense of movement, intimacy, and wandering found throughout Van Sant’s films. The system shifts across formats while maintaining a consistent visual language."
       },
       "images": [
-        { "nodeId": "90:1874", "name": "ברושור גיפ 1", "url": "https://www.figma.com/api/mcp/asset/a615f368-ae57-47e2-b9a2-464b00137fbf.png", "left": 165, "top": 216, "width": 614, "height": 345 },
-        { "nodeId": "92:1878", "name": "צילום מסך 2026-08-07 ב-22.45.53 1", "url": "https://www.figma.com/api/mcp/asset/a803b9d9-f0ac-4ba6-b6f1-fe010cd49bad.png", "left": 165, "top": 652, "width": 610, "height": 284 },
-        { "nodeId": "92:1880", "name": "IMG_3549 2 1", "url": "https://www.figma.com/api/mcp/asset/8da2db54-4ab4-4f8c-b8a5-672d5b480537.png", "left": 850, "top": 689, "width": 396, "height": 528 },
-        { "nodeId": "92:1879", "name": "IMG_3553 1", "url": "https://www.figma.com/api/mcp/asset/7ea2f57b-61b2-44b9-b82c-5315bc20ded4.png", "left": 165, "top": 1027, "width": 591, "height": 443 },
-        { "nodeId": "90:1875", "name": "צילום מסך 2026-08-07 ב-20.08.58 1", "url": "https://www.figma.com/api/mcp/asset/bbc005c1-8e27-4b7a-a534-abb3d58791ca.png", "left": 849, "top": 1302, "width": 399, "height": 567 },
-        { "nodeId": "92:1881", "name": "IMG_3468 1", "url": "https://www.figma.com/api/mcp/asset/3462f412-8c7f-4de8-be7e-8cfe834f6631.png", "left": 165, "top": 1561, "width": 592, "height": 444 }
+        {
+          "nodeId": "90:1874",
+          "name": "ברושור גיפ 1",
+          "url": "https://www.figma.com/api/mcp/asset/a615f368-ae57-47e2-b9a2-464b00137fbf.png",
+          "left": 165,
+          "top": 216,
+          "width": 614,
+          "height": 345
+        },
+        {
+          "nodeId": "92:1878",
+          "name": "צילום מסך 2026-08-07 ב-22.45.53 1",
+          "url": "https://www.figma.com/api/mcp/asset/a803b9d9-f0ac-4ba6-b6f1-fe010cd49bad.png",
+          "left": 165,
+          "top": 652,
+          "width": 610,
+          "height": 284
+        },
+        {
+          "nodeId": "92:1880",
+          "name": "IMG_3549 2 1",
+          "url": "https://www.figma.com/api/mcp/asset/8da2db54-4ab4-4f8c-b8a5-672d5b480537.png",
+          "left": 850,
+          "top": 689,
+          "width": 396,
+          "height": 528
+        },
+        {
+          "nodeId": "92:1879",
+          "name": "IMG_3553 1",
+          "url": "https://www.figma.com/api/mcp/asset/7ea2f57b-61b2-44b9-b82c-5315bc20ded4.png",
+          "left": 165,
+          "top": 1027,
+          "width": 591,
+          "height": 443
+        },
+        {
+          "nodeId": "90:1875",
+          "name": "צילום מסך 2026-08-07 ב-20.08.58 1",
+          "url": "https://www.figma.com/api/mcp/asset/bbc005c1-8e27-4b7a-a534-abb3d58791ca.png",
+          "left": 849,
+          "top": 1302,
+          "width": 399,
+          "height": 567
+        },
+        {
+          "nodeId": "92:1881",
+          "name": "IMG_3468 1",
+          "url": "https://www.figma.com/api/mcp/asset/3462f412-8c7f-4de8-be7e-8cfe834f6631.png",
+          "left": 165,
+          "top": 1561,
+          "width": 592,
+          "height": 444
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1339", "text": "ofri698@gmail.com", "left": 69, "top": 2132, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "85:1340", "text": "instagram", "left": 215, "top": 2132, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "85:1339",
+          "text": "ofri698@gmail.com",
+          "left": 69,
+          "top": 2132,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "85:1340",
+          "text": "instagram",
+          "left": 215,
+          "top": 2132,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": []
     },
@@ -150,13 +401,51 @@
         "text": "A symbol system representing the four cardinal directions through flowers associated with different regions of Israel. Each flower was reduced into a geometric graphic symbol, translating its distinct form and regional identity into a cohesive visual language. The system was then applied to a soap collection, exploring how the symbols could evolve into a product and packaging identity."
       },
       "images": [
-        { "nodeId": "100:1903", "name": "IMG_9048 1", "url": "https://www.figma.com/api/mcp/asset/dd4eed42-404d-4a23-93ad-9f8fef1c34a8.png", "left": 154, "top": 157, "width": 504, "height": 495 },
-        { "nodeId": "100:1898", "name": "D80921A7-58EA-4537-8563-CEB8378D606E 1", "url": "https://www.figma.com/api/mcp/asset/28f81ae5-5b19-4756-8be0-e65c89c61c6f.png", "left": 154, "top": 748, "width": 591, "height": 716 },
-        { "nodeId": "100:1900", "name": "image 1", "url": "https://www.figma.com/api/mcp/asset/1f46a5e5-7c49-42b9-915e-431b798d3625.png", "left": 784, "top": 756, "width": 490, "height": 653 }
+        {
+          "nodeId": "100:1903",
+          "name": "IMG_9048 1",
+          "url": "https://www.figma.com/api/mcp/asset/dd4eed42-404d-4a23-93ad-9f8fef1c34a8.png",
+          "left": 154,
+          "top": 157,
+          "width": 504,
+          "height": 495
+        },
+        {
+          "nodeId": "100:1898",
+          "name": "D80921A7-58EA-4537-8563-CEB8378D606E 1",
+          "url": "https://www.figma.com/api/mcp/asset/28f81ae5-5b19-4756-8be0-e65c89c61c6f.png",
+          "left": 154,
+          "top": 748,
+          "width": 591,
+          "height": 716
+        },
+        {
+          "nodeId": "100:1900",
+          "name": "image 1",
+          "url": "https://www.figma.com/api/mcp/asset/1f46a5e5-7c49-42b9-915e-431b798d3625.png",
+          "left": 784,
+          "top": 756,
+          "width": 490,
+          "height": 653
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1378", "text": "ofri698@gmail.com", "left": 69, "top": 1472, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "85:1379", "text": "instagram", "left": 215, "top": 1472, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "85:1378",
+          "text": "ofri698@gmail.com",
+          "left": 69,
+          "top": 1472,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "85:1379",
+          "text": "instagram",
+          "left": 215,
+          "top": 1472,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": []
     },
@@ -184,18 +473,80 @@
         "text": "An AI-generated image series exploring the place of the individual in an increasingly AI-driven world. Created using Midjourney, the project imagines anonymous human figures as identical forms produced on an endless assembly line. Through repetition, uniformity, and a sterile visual language, the series questions what makes us human when individuality begins to disappear. As artificial intelligence becomes capable of generating endless versions of us, the project asks: where does our uniqueness remain?"
       },
       "images": [
-        { "nodeId": "92:1894", "name": "צילום מסך 2026-08-07 ב-23.22.54 1", "url": "https://www.figma.com/api/mcp/asset/574781e7-e732-4a39-88fb-89b97e223d89.png", "left": 151, "top": 220, "width": 521, "height": 729 },
-        { "nodeId": "92:1897", "name": "ai0.course_httpss.mj.run0LE1EtyBxfI_preserve_the_exact_same_g_706d2517-af47-497a-bda6-d4f899481980_3 1", "url": "https://www.figma.com/api/mcp/asset/7dfe46b2-85e4-4844-9048-057de1b54de6.png", "left": 151, "top": 1562, "width": 689, "height": 689 },
-        { "nodeId": "92:1895", "name": "ai0.course_vast_monochromatic_white_manufacturing_facility_mu_2b5bca90-6ecb-4078-9a5f-1a0aac10bb3d_0 1", "url": "https://www.figma.com/api/mcp/asset/9d13e454-32d8-4f27-b229-31f2a017e123.png", "left": 948, "top": 1562, "width": 414, "height": 517 }
+        {
+          "nodeId": "92:1894",
+          "name": "צילום מסך 2026-08-07 ב-23.22.54 1",
+          "url": "https://www.figma.com/api/mcp/asset/574781e7-e732-4a39-88fb-89b97e223d89.png",
+          "left": 151,
+          "top": 220,
+          "width": 521,
+          "height": 729
+        },
+        {
+          "nodeId": "92:1897",
+          "name": "ai0.course_httpss.mj.run0LE1EtyBxfI_preserve_the_exact_same_g_706d2517-af47-497a-bda6-d4f899481980_3 1",
+          "url": "https://www.figma.com/api/mcp/asset/7dfe46b2-85e4-4844-9048-057de1b54de6.png",
+          "left": 151,
+          "top": 1562,
+          "width": 689,
+          "height": 689
+        },
+        {
+          "nodeId": "92:1895",
+          "name": "ai0.course_vast_monochromatic_white_manufacturing_facility_mu_2b5bca90-6ecb-4078-9a5f-1a0aac10bb3d_0 1",
+          "url": "https://www.figma.com/api/mcp/asset/9d13e454-32d8-4f27-b229-31f2a017e123.png",
+          "left": 948,
+          "top": 1562,
+          "width": 414,
+          "height": 517
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1417", "text": "ofri698@gmail.com", "left": 69, "top": 2878, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "85:1418", "text": "instagram", "left": 215, "top": 2878, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "85:1417",
+          "text": "ofri698@gmail.com",
+          "left": 69,
+          "top": 2878,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "85:1418",
+          "text": "instagram",
+          "left": 215,
+          "top": 2878,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": [
-        { "nodeId": "92:1893", "name": "ai0.course_httpss.mj.runLvkfMUEf6_Q_--ar_205256_--video_1_--e_56963191-1576-46db-b64b-1a166273b335_3 1", "left": 151, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-1.mp4" },
-        { "nodeId": "92:1892", "name": "ai0.course_automated_assembly_line_identical_glossy_white_han_0136847f-e5f3-46c2-be0d-e6d6d46e38c0_0 1", "left": 581, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-2.mp4" },
-        { "nodeId": "92:1891", "name": "ai0.course_genderless_human_form_anonymous_biometric_mannequi_8f8a1bcf-86fb-4fe0-b483-7883bcbaff1e_3 1", "left": 1010, "top": 1034, "width": 352, "height": 443, "src": "/images/projects/who-am-i/video-3.mp4" }
+        {
+          "nodeId": "92:1893",
+          "name": "ai0.course_httpss.mj.runLvkfMUEf6_Q_--ar_205256_--video_1_--e_56963191-1576-46db-b64b-1a166273b335_3 1",
+          "left": 151,
+          "top": 1034,
+          "width": 352,
+          "height": 443,
+          "src": "/images/projects/who-am-i/video-1.mp4"
+        },
+        {
+          "nodeId": "92:1892",
+          "name": "ai0.course_automated_assembly_line_identical_glossy_white_han_0136847f-e5f3-46c2-be0d-e6d6d46e38c0_0 1",
+          "left": 581,
+          "top": 1034,
+          "width": 352,
+          "height": 443,
+          "src": "/images/projects/who-am-i/video-2.mp4"
+        },
+        {
+          "nodeId": "92:1891",
+          "name": "ai0.course_genderless_human_form_anonymous_biometric_mannequi_8f8a1bcf-86fb-4fe0-b483-7883bcbaff1e_3 1",
+          "left": 1010,
+          "top": 1034,
+          "width": 352,
+          "height": 443,
+          "src": "/images/projects/who-am-i/video-3.mp4"
+        }
       ]
     },
     {
@@ -222,17 +573,72 @@
         "text": "A hand-drawn animation based on my everyday life. A collection of small moments, routines, and habits that come together to tell a little about me and my world. Created frame by frame, the project explores movement, rhythm, and the transition from static illustration to animation."
       },
       "images": [
-        { "nodeId": "58:848", "name": "IMG_1214 1", "url": "https://www.figma.com/api/mcp/asset/1b77ace9-b89f-4292-9b3f-126f86973412.png", "left": 132, "top": 150, "width": 595, "height": 466 },
-        { "nodeId": "71:1121", "name": "IMG_1211 1", "url": "https://www.figma.com/api/mcp/asset/e7f22062-cbcc-404c-a106-a3512052d872.png", "left": 291, "top": 1407, "width": 315, "height": 294 },
-        { "nodeId": "71:1122", "name": "IMG_1212 2 1", "url": "https://www.figma.com/api/mcp/asset/0985bf32-a28e-4528-865e-88a642c4afe8.png", "left": 634, "top": 1368, "width": 423.88, "height": 358.667, "rotation": -0.74 },
-        { "nodeId": "58:850", "name": "IMG_1216 1", "url": "https://www.figma.com/api/mcp/asset/ef23b056-fa53-491b-a143-af77901073c2.png", "left": 949, "top": 1380, "width": 415, "height": 379 }
+        {
+          "nodeId": "58:848",
+          "name": "IMG_1214 1",
+          "url": "https://www.figma.com/api/mcp/asset/1b77ace9-b89f-4292-9b3f-126f86973412.png",
+          "left": 132,
+          "top": 150,
+          "width": 595,
+          "height": 466
+        },
+        {
+          "nodeId": "71:1121",
+          "name": "IMG_1211 1",
+          "url": "https://www.figma.com/api/mcp/asset/e7f22062-cbcc-404c-a106-a3512052d872.png",
+          "left": 291,
+          "top": 1407,
+          "width": 315,
+          "height": 294
+        },
+        {
+          "nodeId": "71:1122",
+          "name": "IMG_1212 2 1",
+          "url": "https://www.figma.com/api/mcp/asset/0985bf32-a28e-4528-865e-88a642c4afe8.png",
+          "left": 634,
+          "top": 1368,
+          "width": 423.88,
+          "height": 358.667,
+          "rotation": -0.74
+        },
+        {
+          "nodeId": "58:850",
+          "name": "IMG_1216 1",
+          "url": "https://www.figma.com/api/mcp/asset/ef23b056-fa53-491b-a143-af77901073c2.png",
+          "left": 949,
+          "top": 1380,
+          "width": 415,
+          "height": 379
+        }
       ],
       "footer": {
-        "email": { "nodeId": "58:824", "text": "ofri698@gmail.com", "left": 69, "top": 1765, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "58:825", "text": "instagram", "left": 215, "top": 1765, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "58:824",
+          "text": "ofri698@gmail.com",
+          "left": 69,
+          "top": 1765,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "58:825",
+          "text": "instagram",
+          "left": 215,
+          "top": 1765,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": [
-        { "nodeId": "58:844", "name": "זאת אני 1", "left": 132, "top": 557, "width": 1280, "height": 720, "note": "Main animation — empty placeholder in Figma export" }
+        {
+          "nodeId": "58:844",
+          "name": "זאת אני 1",
+          "left": 132,
+          "top": 557,
+          "width": 1280,
+          "height": 720,
+          "note": "Main animation — empty placeholder in Figma export"
+        }
       ]
     },
     {
@@ -259,24 +665,78 @@
         "text": "An illustration exercise inspired by the visual language of Blexbolex. Using three selected words as a starting point, I created a series of illustrations based on word associations and visual contrasts. The images were made by hand using stencils and flat layers of color, with a consistent color hierarchy throughout the series. The project explores how simple shapes, limited color, and subtle irony can transform the meaning of familiar words."
       },
       "images": [
-        { "nodeId": "58:932", "name": "IMG_0176 3", "url": "https://www.figma.com/api/mcp/asset/10c8091e-520a-4a02-b3d9-ce25ca8ad6f8.png", "left": 218, "top": 227, "width": 400, "height": 763 },
-        { "nodeId": "58:927", "name": "IMG_0173 3", "url": "https://www.figma.com/api/mcp/asset/04611286-99e2-4713-8dae-436213f4a1f8.png", "left": 161, "top": 1066, "width": 1191, "height": 846 },
-        { "nodeId": "58:926", "name": "IMG_0172 1", "url": "https://www.figma.com/api/mcp/asset/b99535d4-ec6f-4adc-80ad-b689068810da.png", "left": 582, "top": 1988, "width": 414, "height": 296 },
-        { "nodeId": "58:928", "name": "IMG_0174 1", "url": "https://www.figma.com/api/mcp/asset/2418375b-ddfa-46a1-a24f-61fca5a4d0f8.png", "left": 205, "top": 1998, "width": 377, "height": 268 },
-        { "nodeId": "58:931", "name": "IMG_0176 2", "url": "https://www.figma.com/api/mcp/asset/10c8091e-520a-4a02-b3d9-ce25ca8ad6f8.png", "left": 971, "top": 1968, "width": 444, "height": 301 }
+        {
+          "nodeId": "58:932",
+          "name": "IMG_0176 3",
+          "url": "https://www.figma.com/api/mcp/asset/10c8091e-520a-4a02-b3d9-ce25ca8ad6f8.png",
+          "left": 218,
+          "top": 227,
+          "width": 400,
+          "height": 763
+        },
+        {
+          "nodeId": "58:927",
+          "name": "IMG_0173 3",
+          "url": "https://www.figma.com/api/mcp/asset/04611286-99e2-4713-8dae-436213f4a1f8.png",
+          "left": 161,
+          "top": 1066,
+          "width": 1191,
+          "height": 846
+        },
+        {
+          "nodeId": "58:926",
+          "name": "IMG_0172 1",
+          "url": "https://www.figma.com/api/mcp/asset/b99535d4-ec6f-4adc-80ad-b689068810da.png",
+          "left": 582,
+          "top": 1988,
+          "width": 414,
+          "height": 296
+        },
+        {
+          "nodeId": "58:928",
+          "name": "IMG_0174 1",
+          "url": "https://www.figma.com/api/mcp/asset/2418375b-ddfa-46a1-a24f-61fca5a4d0f8.png",
+          "left": 205,
+          "top": 1998,
+          "width": 377,
+          "height": 268
+        },
+        {
+          "nodeId": "58:931",
+          "name": "IMG_0176 2",
+          "url": "https://www.figma.com/api/mcp/asset/10c8091e-520a-4a02-b3d9-ce25ca8ad6f8.png",
+          "left": 971,
+          "top": 1968,
+          "width": 444,
+          "height": 301
+        }
       ],
       "footer": {
-        "email": { "nodeId": "58:876", "text": "ofri698@gmail.com", "left": 73, "top": 2499, "width": 235, "height": 18 },
-        "instagram": { "nodeId": "58:877", "text": "instagram", "left": 219, "top": 2499, "width": 235, "height": 18 }
+        "email": {
+          "nodeId": "58:876",
+          "text": "ofri698@gmail.com",
+          "left": 73,
+          "top": 2499,
+          "width": 235,
+          "height": 18
+        },
+        "instagram": {
+          "nodeId": "58:877",
+          "text": "instagram",
+          "left": 219,
+          "top": 2499,
+          "width": 235,
+          "height": 18
+        }
       },
       "videoPlaceholders": []
     },
     {
       "slug": "dudu-tassa",
       "name": "Dudu Tassa",
- "figmaName": "דף דודו טסה",
- "nodeId": "71:1133",
- "pageHeight": 2881,
+      "figmaName": "דף דודו טסה",
+      "nodeId": "71:1133",
+      "pageHeight": 2881,
       "badge": {
         "text": "Dudu Tassa",
         "left": 746,
@@ -295,17 +755,87 @@
         "text": "An album cover design for Israeli musician Dudu Tassa, inspired by the contrast between his Iraqi musical roots and his contemporary rock sound. The design brings these two worlds together through an ethnic-inspired pattern combined with a more technical, digital visual language. The project explores the tension between tradition and modernity, translating Tassa’s musical identity into a visual system that feels rooted in the past while belonging to the present."
       },
       "images": [
-        { "nodeId": "71:1183", "name": "תקליט רקע זז 1", "url": "https://www.figma.com/api/mcp/asset/a5e9150c-94c0-42d8-ab2c-1dcdf9e5551a.png", "left": 195, "top": 214, "width": 471, "height": 357 },
-        { "nodeId": "71:1181", "name": "תקליט מוקאפ copy 4", "url": "https://www.figma.com/api/mcp/asset/04b297c5-ba3e-46e8-b25e-295d9ea06e0c.png", "left": 186, "top": 637, "width": 1147, "height": 860 },
-        { "nodeId": "71:1184", "name": "צילום מסך 2026-08-07 ב-17.01.55 1", "url": "https://www.figma.com/api/mcp/asset/743f6d93-6bf7-431e-8192-700890da0781.png", "left": 186, "top": 1555, "width": 815, "height": 409 },
-        { "nodeId": "76:1187", "name": "צילום מסך 2026-08-07 ב-17.05.02 1", "url": "https://www.figma.com/api/mcp/asset/85125651-343b-4814-b670-99a390e8d77c.png", "left": 1050, "top": 1555, "width": 283, "height": 409 },
-        { "nodeId": "76:1189", "name": "צילום מסך 2026-08-07 ב-17.06.30 1", "url": "https://www.figma.com/api/mcp/asset/1e83a366-a41b-4f2e-a190-ed7a63fde52c.png", "left": 175, "top": 2014, "width": 317, "height": 302 },
-        { "nodeId": "76:1185", "name": "מדבקות 1", "url": "https://www.figma.com/api/mcp/asset/b82d900b-f812-4b62-a256-f0e8c5d786a4.png", "left": 582, "top": 2014, "width": 747, "height": 560 },
-        { "nodeId": "76:1188", "name": "צילום מסך 2026-08-07 ב-17.06.21 1", "url": "https://www.figma.com/api/mcp/asset/26106f4c-b3e7-4bef-9da8-2f41bb693138.png", "left": 169, "top": 2322, "width": 313, "height": 317 }
+        {
+          "nodeId": "71:1183",
+          "name": "תקליט רקע זז 1",
+          "url": "https://www.figma.com/api/mcp/asset/a5e9150c-94c0-42d8-ab2c-1dcdf9e5551a.png",
+          "left": 195,
+          "top": 214,
+          "width": 471,
+          "height": 357
+        },
+        {
+          "nodeId": "71:1181",
+          "name": "תקליט מוקאפ copy 4",
+          "url": "https://www.figma.com/api/mcp/asset/04b297c5-ba3e-46e8-b25e-295d9ea06e0c.png",
+          "left": 186,
+          "top": 637,
+          "width": 1147,
+          "height": 860
+        },
+        {
+          "nodeId": "71:1184",
+          "name": "צילום מסך 2026-08-07 ב-17.01.55 1",
+          "url": "https://www.figma.com/api/mcp/asset/743f6d93-6bf7-431e-8192-700890da0781.png",
+          "left": 186,
+          "top": 1555,
+          "width": 815,
+          "height": 409
+        },
+        {
+          "nodeId": "76:1187",
+          "name": "צילום מסך 2026-08-07 ב-17.05.02 1",
+          "url": "https://www.figma.com/api/mcp/asset/85125651-343b-4814-b670-99a390e8d77c.png",
+          "left": 1050,
+          "top": 1555,
+          "width": 283,
+          "height": 409
+        },
+        {
+          "nodeId": "76:1189",
+          "name": "צילום מסך 2026-08-07 ב-17.06.30 1",
+          "url": "https://www.figma.com/api/mcp/asset/1e83a366-a41b-4f2e-a190-ed7a63fde52c.png",
+          "left": 175,
+          "top": 2014,
+          "width": 317,
+          "height": 302
+        },
+        {
+          "nodeId": "76:1185",
+          "name": "מדבקות 1",
+          "url": "https://www.figma.com/api/mcp/asset/b82d900b-f812-4b62-a256-f0e8c5d786a4.png",
+          "left": 582,
+          "top": 2014,
+          "width": 747,
+          "height": 560
+        },
+        {
+          "nodeId": "76:1188",
+          "name": "צילום מסך 2026-08-07 ב-17.06.21 1",
+          "url": "https://www.figma.com/api/mcp/asset/26106f4c-b3e7-4bef-9da8-2f41bb693138.png",
+          "left": 169,
+          "top": 2322,
+          "width": 313,
+          "height": 317
+        }
       ],
       "footer": {
-        "email": { "nodeId": "71:1137", "text": "ofri698@gmail.com", "left": 73, "top": 2767, "width": 235, "height": 21 },
-        "instagram": { "nodeId": "71:1138", "text": "instagram", "left": 219, "top": 2767, "width": 235, "height": 21 }
+        "email": {
+          "nodeId": "71:1137",
+          "text": "ofri698@gmail.com",
+          "left": 73,
+          "top": 2767,
+          "width": 235,
+          "height": 21
+        },
+        "instagram": {
+          "nodeId": "71:1138",
+          "text": "instagram",
+          "left": 219,
+          "top": 2767,
+          "width": 235,
+          "height": 21
+        }
       },
       "videoPlaceholders": []
     },
@@ -333,16 +863,78 @@
         "text": "A chocolate brand built around the connection between taste and facial expression. The packaging explores the instinctive reactions we make while eating, translating facial expressions into folds and wrinkles across the wrappers. Each chocolate has a different cocoa percentage and intensity, reflected through a different pattern of crumpling. The result is a packaging system where taste, emotion, and physical form come together as one visual language."
       },
       "images": [
-        { "nodeId": "85:1238", "name": "שוקולד נפתח 1", "url": "https://www.figma.com/api/mcp/asset/5bd0deab-1094-4b3b-9df2-4be5e646bc33.png", "left": 204, "top": 219, "width": 454.5, "height": 808 },
-        { "nodeId": "85:1242", "name": "3 1", "url": "https://www.figma.com/api/mcp/asset/75417eaf-67bb-4001-8e9e-55c34fc14eb5.png", "left": 213, "top": 1103, "width": 823, "height": 549 },
-        { "nodeId": "85:1240", "name": "DSC_1077 1", "url": "https://www.figma.com/api/mcp/asset/8479d5c6-7412-4557-967a-3a40172af140.png", "left": 204, "top": 1728, "width": 491, "height": 613 },
-        { "nodeId": "85:1239", "name": "DSC_0770 3", "url": "https://www.figma.com/api/mcp/asset/fc80b273-5866-4956-a876-256bcfe62543.png", "left": 790, "top": 1728, "width": 490, "height": 613 },
-        { "nodeId": "85:1245", "name": "DSC_0668 1", "url": "https://www.figma.com/api/mcp/asset/91f31d86-5a2f-438b-9496-992fbf72a0cc.png", "left": 204, "top": 2415, "width": 491, "height": 614 },
-        { "nodeId": "85:1244", "name": "DSC_1046 1", "url": "https://www.figma.com/api/mcp/asset/fea099f6-9c13-4651-a39e-2aaf4b186c41.png", "left": 789, "top": 2417, "width": 491, "height": 614 }
+        {
+          "nodeId": "85:1238",
+          "name": "שוקולד נפתח 1",
+          "url": "https://www.figma.com/api/mcp/asset/5bd0deab-1094-4b3b-9df2-4be5e646bc33.png",
+          "left": 204,
+          "top": 219,
+          "width": 454.5,
+          "height": 808
+        },
+        {
+          "nodeId": "85:1242",
+          "name": "3 1",
+          "url": "https://www.figma.com/api/mcp/asset/75417eaf-67bb-4001-8e9e-55c34fc14eb5.png",
+          "left": 213,
+          "top": 1103,
+          "width": 823,
+          "height": 549
+        },
+        {
+          "nodeId": "85:1240",
+          "name": "DSC_1077 1",
+          "url": "https://www.figma.com/api/mcp/asset/8479d5c6-7412-4557-967a-3a40172af140.png",
+          "left": 204,
+          "top": 1728,
+          "width": 491,
+          "height": 613
+        },
+        {
+          "nodeId": "85:1239",
+          "name": "DSC_0770 3",
+          "url": "https://www.figma.com/api/mcp/asset/fc80b273-5866-4956-a876-256bcfe62543.png",
+          "left": 790,
+          "top": 1728,
+          "width": 490,
+          "height": 613
+        },
+        {
+          "nodeId": "85:1245",
+          "name": "DSC_0668 1",
+          "url": "https://www.figma.com/api/mcp/asset/91f31d86-5a2f-438b-9496-992fbf72a0cc.png",
+          "left": 204,
+          "top": 2415,
+          "width": 491,
+          "height": 614
+        },
+        {
+          "nodeId": "85:1244",
+          "name": "DSC_1046 1",
+          "url": "https://www.figma.com/api/mcp/asset/fea099f6-9c13-4651-a39e-2aaf4b186c41.png",
+          "left": 789,
+          "top": 2417,
+          "width": 491,
+          "height": 614
+        }
       ],
       "footer": {
-        "email": { "nodeId": "85:1194", "text": "ofri698@gmail.com", "left": 67, "top": 3267, "width": 235, "height": 21 },
-        "instagram": { "nodeId": "85:1195", "text": "instagram", "left": 213, "top": 3267, "width": 235, "height": 21 }
+        "email": {
+          "nodeId": "85:1194",
+          "text": "ofri698@gmail.com",
+          "left": 67,
+          "top": 3267,
+          "width": 235,
+          "height": 21
+        },
+        "instagram": {
+          "nodeId": "85:1195",
+          "text": "instagram",
+          "left": 213,
+          "top": 3267,
+          "width": 235,
+          "height": 21
+        }
       },
       "videoPlaceholders": []
     }

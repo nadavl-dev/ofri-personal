@@ -124,7 +124,7 @@ export function ViewportFooter() {
 
   return createPortal(
     <div
-      className="fixed z-30 transition-transform duration-300 ease-out"
+      className="fixed z-30 leading-[18px] transition-transform duration-300 ease-out"
       style={{
         left: 36,
         top: 934 * scale,
@@ -164,7 +164,7 @@ export function SiteFooter({
 }) {
   return (
     <div
-      className="absolute"
+      className="absolute leading-[18px]"
       style={{ left: emailLeft, top: emailTop }}
     >
       <a

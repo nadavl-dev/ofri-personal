@@ -129,6 +129,31 @@ export function ProjectPageView({ page }: { page: ProjectPageData }) {
           </div>
         ))}
 
+        {page.heroHover ? (
+          <div
+            className="group absolute z-10"
+            style={{
+              left: page.heroHover.trigger.left,
+              top: page.heroHover.trigger.top,
+              width: page.heroHover.trigger.width,
+              height: page.heroHover.trigger.height,
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={page.heroHover.overlay.src}
+              alt=""
+              className="pointer-events-none absolute max-w-none opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              style={{
+                left: page.heroHover.overlay.left - page.heroHover.trigger.left,
+                top: page.heroHover.overlay.top - page.heroHover.trigger.top,
+                width: page.heroHover.overlay.width,
+                height: page.heroHover.overlay.height,
+              }}
+            />
+          </div>
+        ) : null}
+
         <div
           className="absolute z-20 inline-flex items-center justify-center whitespace-nowrap bg-[#1c07fb] px-[15px]"
           style={{
