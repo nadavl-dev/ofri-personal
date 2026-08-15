@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import {
   EMAIL,
+  GMAIL_COMPOSE_URL,
   INSTAGRAM_LABEL,
   INSTAGRAM_URL,
   PANEL_WIDTH,
@@ -133,7 +134,9 @@ export function ViewportFooter() {
       }}
     >
       <a
-        href={`mailto:${EMAIL}`}
+        href={GMAIL_COMPOSE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="font-light leading-[18px] text-black no-underline hover:opacity-80"
       >
         {EMAIL}
@@ -168,7 +171,9 @@ export function SiteFooter({
       style={{ left: emailLeft, top: emailTop }}
     >
       <a
-        href={`mailto:${EMAIL}`}
+        href={GMAIL_COMPOSE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[14px] font-light leading-[18px] text-black no-underline hover:opacity-80"
       >
         {EMAIL}
