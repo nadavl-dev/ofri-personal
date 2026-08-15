@@ -208,18 +208,22 @@ export function AboutPanel() {
             className="absolute flex flex-col text-[14px] font-light leading-[18px]"
             style={{ left: 21, top: 919 }}
           >
-            <button
-              type="button"
-              className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline"
+            <a
+              href="/files/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer text-left text-white underline"
             >
               cv
-            </button>
-            <button
-              type="button"
-              className="cursor-pointer border-0 bg-transparent p-0 text-left text-white underline"
+            </a>
+            <a
+              href="/files/recommendations.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer text-left text-white underline"
             >
               Recommendations
-            </button>
+            </a>
           </div>
         </PanelCanvas>
       </aside>
